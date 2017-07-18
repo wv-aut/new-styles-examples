@@ -1,10 +1,18 @@
 {
   "env"     : {
+    "es6" : true,
     "mocha" : true
   },
   "globals" : {
     "expect" : false,
     "should" : false,
     "sinon"  : false
+  },
+  "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
   }
 }

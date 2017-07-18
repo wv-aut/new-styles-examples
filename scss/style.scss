@@ -1291,8 +1291,8 @@ div.warning, div.error, div.messages {
 
   .fixed {
     position:fixed;
-    padding-bottom: 20px;
-    top:0;
+    padding-top: 20px;
+    bottom:0;
     left:0;
     width:100%;
     .bottom {bottom:0; top:auto;}
@@ -1554,7 +1554,6 @@ div.warning, div.error, div.messages {
         box-shadow: 5px 5px 0 0 #565658;
       }
     }
-
   }
 }
 
@@ -1626,11 +1625,11 @@ $gutter: 10px;
 
 $global-text-size: 1;
 
-$global-h1-size: $global-text-size * 2.8;
-$global-h2-size: $global-text-size * 1.8;
-$global-h3-size: $global-text-size * 1.6;
-$global-h4-size: $global-text-size * 1.4;
-$global-h5-size: $global-text-size * 1.2;
+$global-h1-size: $global-text-size * 2.2;
+$global-h2-size: $global-text-size * 1.6;
+$global-h3-size: $global-text-size * 1.4;
+$global-h4-size: $global-text-size * 1.2;
+$global-h5-size: $global-text-size * 1.1;
 $global-h6-size: $global-text-size * 1;
 
 svg {
@@ -1657,7 +1656,7 @@ svg {
   }
 }
 
-p {
+p, a {
   font-family: 'Lato Light', sans-serif;
   font-size: rem-convert($global-text-size);
 }
@@ -1665,7 +1664,7 @@ p {
 h1 {
   font-size: rem-convert($global-h1-size);
   @media screen and (min-width: $break-for-large-screens) {
-    font-size: rem-convert($global-h1-size * 2);
+    font-size: rem-convert($global-h1-size);
   }
 
 }
@@ -1835,10 +1834,10 @@ h1, h2, h3, h4, h5, h6, p, a, label {
 
   .container-image {
         position: absolute;
-        height: 100%;
         width: 100%;
+        height: 100%;
         overflow-x: hidden;
-        img, video {
+        .background-image {
           position: absolute;
           left: -9999px;
           right: -9999px;
@@ -1848,19 +1847,40 @@ h1, h2, h3, h4, h5, h6, p, a, label {
           @media screen and (max-width: $break-for-large-screens) {
               height: 100%;
           }
-    }
+      }
+      .layer-down {
+          position: absolute;
+          width: auto;
+          left: -9999px;
+          right: -9999px;
+          bottom: 0;
+          transition: bottom ease 0.5s;
+      }
   }
+
   @media screen and (min-width: $break-for-large-screens) {
     .container-image {
       overflow-y: hidden;
-      img, video {
+      .background-image {
+            position: absolute;
             width: 100%;
             left: 0;
             right: 0;
+            bottom: 0px;
       }
-
+      .layer-down {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
     }
-            
+    .hover-over {
+        .layer-down {
+          bottom: -180px;
+        }
+      }
   }
   // Slider css activation
   $num: 10;
@@ -1878,7 +1898,7 @@ h1, h2, h3, h4, h5, h6, p, a, label {
 }
 
 // height can either be % to keep ratio or px or 0 to discard it
-@mixin flexbox ($gutter, $max-width: $global-max-width, $height: 45%, $split...) {
+@mixin flexbox ($gutter, $max-width: $global-max-width, $height: 45%, $margin-bottom: 10px, $split...) {
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1889,13 +1909,11 @@ h1, h2, h3, h4, h5, h6, p, a, label {
   &.wrap {
     flex-wrap: wrap;
   }
-
   @media screen and (min-width: $break-for-large-screens) {
-    &.no-wrap {
-      flex-wrap: nowrap !important;
+    &.wrap {
+      flex-wrap: nowrap;
     }
   }
-
   div[class*="column"] {
     @media screen and (min-width: $break-for-large-screens) {
       margin-right: $gutter;
@@ -1906,24 +1924,24 @@ h1, h2, h3, h4, h5, h6, p, a, label {
     }
   }
   @if($split) {
-    @include column($height, $split...);
+    @include column($height, $margin-bottom, $gutter, $split...);
   }
 }
 
-@mixin column ($height, $split...) {
+@mixin column ($height, $margin-bottom: 10px, $gutter:10px, $split...) {
     @if($split) {
     @each $column in $split {
       .column-12-#{$column} {
         position: relative;
         width: 99.99%;
-        margin-bottom: 10px;
+        margin-bottom: $margin-bottom;
         @media screen and (min-width: $break-for-large-screens) {
           width: calc( 99.99% * #{$column} / 12 - (#{$gutter} - #{$gutter} * #{$column} / 12 ));
         }
         @if ($height != 0) {
           @if (unit($height) == '%') {
                 padding-bottom: $height * 3;
-            @media screen and (min-width: $break-for-medium-screens) {
+            @media screen and (max-width: $break-for-medium-screens) {
                 padding-bottom: $height * 2;
             }   
             @media screen and (min-width: $break-for-large-screens) {
@@ -1941,7 +1959,7 @@ h1, h2, h3, h4, h5, h6, p, a, label {
   }
 }
 
-@mixin content-panel ($background-color: $white, $theme-color: $orange, $header-size: 1) {
+@mixin content-panel ($background-color: $white, $theme-color: $orange, $header-size: 0.8) {
   .content-panel {
     margin: 1rem;
 
@@ -1956,8 +1974,7 @@ h1, h2, h3, h4, h5, h6, p, a, label {
       color: white;
       bottom: 50%;
       left: 50%;
-      width: 90%;
-      height: 200px;
+      width: 80%;
       z-index: 20;
       transform: translate(-50%, 50%);
       transition: bottom ease 0.5s;
@@ -1967,8 +1984,26 @@ h1, h2, h3, h4, h5, h6, p, a, label {
       h1, h2, h3, h4, h5, h6, p {
         color: white;
         text-align: center;
+      }
+      h2, h3, h4, h5, h6 {
         text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
-        font-size: rem-convert($global-h1-size * $header-size) !important;
+      }
+
+      @media screen and (max-width: $break-for-large-screens) {
+        h1 {
+          font-size: rem-convert($global-h1-size * $header-size) !important;
+        }
+        h3 {
+          font-size: rem-convert($global-h3-size * $header-size) !important;
+        }
+      }
+
+      p.background {
+        text-align: center;
+        span {
+        background-color: $purple;
+        padding: 0.3rem 0;
+      }
       }
     }
 
@@ -1982,7 +2017,6 @@ h1, h2, h3, h4, h5, h6, p, a, label {
           background: linear-gradient(to right, rgba($theme-color, 0.5) 0%, rgba($theme-color, 1) 100%); 
         }
       }
-
     }
     svg {
       fill: $theme-color;
@@ -1990,7 +2024,6 @@ h1, h2, h3, h4, h5, h6, p, a, label {
 
       }
     }
-
     .content {
       position: absolute;
       left: 0;
@@ -2020,10 +2053,10 @@ h1, h2, h3, h4, h5, h6, p, a, label {
   }
 }
 
-@mixin content-slider ($height: 50%, $background-color: $black, $transparency: 1, $font-color: white, $flexbox-inner-width: 70%, $theme-color: $orange) {
+@mixin content-slider ($height: 50%, $background-color: $black, $transparency: 1, $font-color: white, $flexbox-inner-width: 70%, $theme-color: $orange, $direction: left) {
   .content-slider {
     position: fixed;
-    top: 50px;
+    top: 0px;
     box-shadow: -14px -14px 39px -17px rgba(0,0,0,0.75);
     padding-top: 80px;
     overflow-y: scroll;
@@ -2031,16 +2064,23 @@ h1, h2, h3, h4, h5, h6, p, a, label {
     height: $height;
     z-index: 1000;
     width: 100%;
-    transition: left ease-in 0.3s;
-    //background: $background-color;
+    transition: $direction ease-in 0.3s;
     background: rgba($background-color, $transparency);
     text-align: center;
     &.hidden-no {
-      left: 0px;
+      @if $direction == left {
+          left: 0px;
+        } @else {
+          right: 0px;
+        }
       .close {
         position: absolute;
         top: 10px;
-        right: 10px;
+        @if $direction == left {
+          right: 10px;
+        } @else {
+          left: 10px;
+        }
         width: 50px;
         z-index: 5000;
         text-align: right;
@@ -2051,12 +2091,25 @@ h1, h2, h3, h4, h5, h6, p, a, label {
       .close {
         display: none;
       }
-      left: 400px;
+      @if $direction == left {
+          left: 400px;
+        } @else {
+          right: 400px;
+        }
+      
       @media screen and (min-width: $break-for-medium-screens) {
-        left: $break-for-large-screens;
+        @if $direction == left {
+          left: $break-for-large-screens;
+        } @else {
+          right: $break-for-large-screens;
+        }
       }
       @media screen and (min-width: $break-for-large-screens) {
-        left: 5000px;
+        @if $direction == left {
+          left: 5000px;
+        } @else {
+          right: 5000px;
+        }
       }
       
     }
@@ -2081,11 +2134,6 @@ h1, h2, h3, h4, h5, h6, p, a, label {
       display: flex;
       max-width: $flexbox-inner-width;
     }
-
-    
-
-
-
   }
 }
 
@@ -2111,19 +2159,18 @@ h1, h2, h3, h4, h5, h6, p, a, label {
         text-decoration: none;
         box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.34);
       }
-
     }
+
     .btn-secondary {
       display: inline-block;
-      -webkit-border-radius: 9;
-      -moz-border-radius: 9;
       border-radius: 9px;
       font-family: 'Lato Light', sans-serif;
-      color: set-text-color($background-color, $white);
+      color: $black;
       font-size: 1.4rem;
       margin: 5px;
-      padding: 0.6rem 0.8rem;
+      padding: 0.8rem 1rem;
       text-decoration: none;
+      background: white;
       &.orange {
         border: solid #f37021 0.2rem;
       }
@@ -2136,29 +2183,85 @@ h1, h2, h3, h4, h5, h6, p, a, label {
     }
   }
 
+#menu-container {
+  position: relative;
+  z-index: 600;
+  background-color: lighten($field-grey, 100%);
+  font-family: 'Lato Light', sans-serif;
+  text-transform: uppercase;
+  margin-top: -10px;
+
+.flexbox {
+    @include flexbox (0px, $global-max-width, 0, 0, 3);
+    // background-color: lighten($field-grey, 15%);
+    div {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      height: 50px;
+      &:hover {
+        background-color: lighten($field-grey, 15%);
+      }
+      a {
+        display: block;
+        line-height: 3.5rem;
+        color: $black;
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $break-for-large-screens) {
+  #menu-container {
+    display: none;
+  }
+}
 
 #landingpage-header {
-  position: fixed;
+  position: relative;
   top:0px;
   z-index: 500;
   width: 100%;
   text-align: center;
-  height: 35px;
+  height: 45px;
   background-color: lighten($field-grey, 15%);
-  @media screen and (min-width: $break-for-large-screens) {
-    height: 60px;
-  }
-    
-  img {
-    margin-top: 7px;
+
+  @include content-slider(100%, lighten($field-grey, 20%), 1, white, 70%, $orange, right);
+
+  .content-slider {
+    .main {
+        background-color: lighten($field-grey, 15%);
+        border-bottom:solid lighten($field-grey, 20%) 1px;
+        line-height: 3.5rem;
+        text-transform: uppercase;
+    } 
+    .meta {
+        border-bottom:solid $field-grey 1px;
+        line-height: 2.5rem;
+    }
   }
 
+  img {
+    margin-top: 7px;
+    width: 150px;
+  }
+
+  @media screen and (min-width: $break-for-large-screens) {
+    height: 60px;
+
+    img {
+      width: 200px;
+    }
+  }
     #beacon {
       fill: orange
     }
 
   .flexbox {
-    @include flexbox (0, $global-max-width, 30px, 4);
+    @include flexbox (0px, $global-max-width, 10px, 0, 4);
     //background: linear-gradient(to bottom, $field-grey 0%,rgba(0,0,0,0) 90%);
 
     #main-nav {
@@ -2166,7 +2269,7 @@ h1, h2, h3, h4, h5, h6, p, a, label {
       height: 35px;
       position: relative;
       z-index: 300;
-      margin: 6px;
+      margin: 8px 6px 6px 12px;
       transform: rotate(0deg);
       transition: .5s ease-in-out;
       cursor: pointer;
@@ -2216,6 +2319,60 @@ h1, h2, h3, h4, h5, h6, p, a, label {
         left: 50%;
       }
     }
+
+    #meta-nav {
+        display: none;
+    }
+
+    #menu-slider-container {
+      display: block;
+      position: fixed;
+      z-index: 1000;
+      width: 80%;
+      height: 100%;
+      border-right: solid #f37021 10px;
+      background-color: lighten($field-grey, 20%);
+      box-shadow: 5px 5px 39px 3px rgba(0,0,0,0.75);
+      .main, .meta {
+        padding: 10px 0;
+        background-color: lighten($field-grey, 20%);
+        border-bottom: 1px solid lighten($field-grey, 10%);
+      }
+      .close-container {
+        text-align: right;
+        border-bottom: 1px solid lighten($field-grey, 10%);
+        img {
+          width: 40px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+  @media screen and (min-width: $break-for-large-screens) {
+
+      div:last-child {
+        text-align: right;
+      }
+
+      #main-nav { 
+        display: none;
+      }
+
+      #menu-slider-container {
+        display: none;
+      }
+
+      #meta-nav {
+        display: inline-block;
+
+        span a {
+          padding: 0 5px 0 0;
+          font-size: 0.9rem;
+          color: $black;
+        }
+      }
+    }
   }
 }
 
@@ -2229,6 +2386,17 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 #landingpage-boxes-container {
+
+  img, video {
+    filter:brightness(100%);
+    transition: filter 500ms linear;
+  }
+
+  .hover-over {
+    img, video {
+      filter:brightness(70%);
+    }
+  }
 
   .hidden {
     display: block;
@@ -2269,14 +2437,17 @@ p, h1, h2, h3, h4, h5, h6 {
     }
   }
 
-  #container-1 {
-
-    padding-top: 40px;
+  #container-sponsorship {
     @include container(lighten($field-grey, 15%));
     .flexbox {
-
-      @include flexbox($gutter, $global-max-width, 45%, 12);
+      @include flexbox($gutter, $global-max-width, 600px, 10px, 12);
+      @media screen and (min-width: $break-for-large-screens) {
+        div {
+          // margin-bottom: 0 !important;
+        }
+      }
     }
+
     @include content-panel();
     @include content-slider(100%, lighten($field-grey, 20%), 1);
     .content-slider {
@@ -2284,15 +2455,15 @@ p, h1, h2, h3, h4, h5, h6 {
         padding: 0.5rem 0;
       }
       .flexbox-header {
-        @include flexbox($gutter, 70%, 0, 12);
+        @include flexbox($gutter, 70%, 0, 10px, 12);
         @include content-panel($black, $maroon, 0.6);
         text-align: center;
       }
       .flexbox-arguments {
-        @include flexbox($gutter, 95%, 0, 3);
+        @include flexbox($gutter, 95%, 0, 10px, 3);
       }
       .flexbox-selector {
-        @include flexbox($gutter, 80%, 0, 3);
+        @include flexbox($gutter, 80%, 0, 10px, 3);
       }
     }
   }
@@ -2300,22 +2471,24 @@ p, h1, h2, h3, h4, h5, h6 {
   #container-2 {
     @include container();
     .flexbox {
-      @include flexbox($gutter, $global-max-width, 45%, 12);
+      @include flexbox($gutter, $global-max-width, 500px, 10px, 12);
     }
     @include content-panel($white, $purple);
-    @include content-slider(100%, lighten($black, 25%), 0.98);
+    @include content-slider(100%, $white, 0.98);
     .content-slider {
       .flexbox-arguments {
-        @include flexbox(50px, 85%, 0, 4);
-    }
+        @include flexbox($gutter, 85%, 0, 10px, 3);
+      }
     }
   }
 
   .tertiary-container {
-      
     @include container();
     .flexbox {
-      @include flexbox($gutter, $global-max-width, 45%, 6);
+      @include flexbox($gutter, $global-max-width, 400px, 10px, 6);
+      img {
+        height: 100%;
+      }
     }
     .unsere-arbeit {
       @include content-panel($white, $maroon, 1);
@@ -2326,7 +2499,10 @@ p, h1, h2, h3, h4, h5, h6 {
       @include content-slider(100%, lighten($field-grey, 20%), 0.98);
     }
   }
-  
+
+  .spon-only {
+    display: none;
+  }
 }
 
 // ----------------------  NEW END --------------------------

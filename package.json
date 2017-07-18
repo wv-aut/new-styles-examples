@@ -1,17 +1,19 @@
 {
-  "name": "lissicare",
+  "name": "worldvision_at_2017",
   "version": "1.0.0",
-  "description": "Lissi Care Homepage",
+  "description": "World Vision Theme 2017",
   "main": "index.js",
   "dependencies": {
     "normalize.css": "^5.0.0",
     "rangeslider-pure": "^0.3.11"
   },
   "devDependencies": {
+    "babel-cli": "^6.24.1",
     "babel-core": "^6.24.0",
     "babel-eslint": "^7.1.1",
     "babel-loader": "^6.4.0",
     "babel-preset-env": "^1.2.1",
+    "babel-preset-es2015": "^6.24.1",
     "better-npm-run": "0.0.14",
     "clean-webpack-plugin": "^0.1.15",
     "css-loader": "^0.27.3",

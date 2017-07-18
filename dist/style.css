@@ -418,15 +418,6 @@ body {
   font-family: "Flaticon";
   src: url(https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/fonts/flaticon/flaticon.eot?#iefix) format("embedded-opentype"), url(https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/fonts/flaticon/flaticon.woff) format("woff"), url(https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/fonts/flaticon/flaticon.svg) format("svg"), url(https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/fonts/flaticon/flaticon.ttf) format("truetype"); }
 
-@font-face {
-  font-family: 'latolight';
-  src: url("/fonts/latolight.woff2") format("woff2"), url("/fonts/latolight.woff") format("woff"); }
-
-@font-face {
-  font-family: 'GillSansMTStd-ExtraBold';
-  src: url("/fonts/33554E_2_0.eot");
-  src: url("/fonts/33554E_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/33554E_2_0.woff2") format("woff2"), url("/fonts/33554E_2_0.ttf") format("truetype"); }
-
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
@@ -3113,257 +3104,6 @@ label.error {
     padding-left: 2.25rem;
     padding-right: 2.25rem; } }
 
-.charcoal {
-  color: #333333 !important; }
-
-.width-100-600-0 {
-  width: 100%;
-  max-width: 800px; }
-
-p.left, h1.left, h2.left, h3.left, h4.left, h5.left, h6.left {
-  text-align: left; }
-
-p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
-  text-align: right; }
-
-#landingpage-header {
-  position: absolute;
-  top: 10px;
-  z-index: 50;
-  width: 100%;
-  text-align: center; }
-  #landingpage-header img {
-    width: 250px; }
-
-#landingpage-boxes-container .hidden {
-  display: block;
-  top: 1;
-  left: 1; }
-
-#landingpage-boxes-container .btn-primary {
-  display: inline-block;
-  -webkit-border-radius: 9;
-  -moz-border-radius: 9;
-  border-radius: 9px;
-  color: #ffffff;
-  font-size: 1.6rem;
-  font-family: 'latolight', sans-serif;
-  padding: 0.8rem 1rem;
-  margin: 5px;
-  text-decoration: none;
-  transition: box-shadow ease 0.5s; }
-  #landingpage-boxes-container .btn-primary.orange {
-    background: #f37021; }
-  #landingpage-boxes-container .btn-primary.blue {
-    background: #00accb; }
-
-#landingpage-boxes-container .btn-primary:hover {
-  text-decoration: none;
-  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.34); }
-
-#landingpage-boxes-container .btn-secondary {
-  display: inline-block;
-  -webkit-border-radius: 9;
-  -moz-border-radius: 9;
-  border-radius: 9px;
-  font-family: 'latolight', sans-serif;
-  color: #ffffff;
-  font-size: 1.6rem;
-  margin: 5px;
-  padding: 0.6rem 0.8rem;
-  text-decoration: none; }
-  #landingpage-boxes-container .btn-secondary.orange {
-    border: solid #f37021 0.2rem; }
-  #landingpage-boxes-container .btn-secondary.blue {
-    border: solid #00accb 0.2rem; }
-
-#landingpage-boxes-container .btn-secondary:hover {
-  text-decoration: none; }
-
-#landingpage-boxes-container label.donation-field {
-  height: 60px;
-  padding: 0 2rem 0 .6rem;
-  margin: 0px; }
-  #landingpage-boxes-container label.donation-field ~ label {
-    display: inline-block;
-    margin-left: 1rem;
-    height: 60px;
-    margin-left: 2rem; }
-    #landingpage-boxes-container label.donation-field ~ label.euro {
-      display: inline-block;
-      font-size: 1.6rem;
-      background-color: white !important;
-      margin: 0 !important;
-      margin-top: 0;
-      padding: 0 !important;
-      color: #333333; }
-
-#landingpage-boxes-container label input {
-  display: inline-block;
-  width: 80px;
-  font-size: 1.6rem;
-  margin: 0;
-  padding: 0;
-  height: 60px;
-  border-width: 0;
-  text-align: right; }
-
-#landingpage-boxes-container .sponsorship-container {
-  background-color: #cbc4bc; }
-
-#landingpage-boxes-container .priority-container, #landingpage-boxes-container .sponsorship-container {
-  position: relative; }
-  #landingpage-boxes-container .priority-container .flexbox-inner, #landingpage-boxes-container .sponsorship-container .flexbox-inner {
-    display: flex;
-    max-width: 70%; }
-  #landingpage-boxes-container .priority-container .flexbox, #landingpage-boxes-container .sponsorship-container .flexbox {
-    display: flex;
-    align-items: stretch;
-    max-width: 1440px;
-    float: both;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px; }
-    #landingpage-boxes-container .priority-container .flexbox.inner, #landingpage-boxes-container .sponsorship-container .flexbox.inner {
-      max-width: 800px; }
-    #landingpage-boxes-container .priority-container .flexbox div[class*="col"], #landingpage-boxes-container .sponsorship-container .flexbox div[class*="col"] {
-      margin-right: 10px;
-      width: 100%; }
-      #landingpage-boxes-container .priority-container .flexbox div[class*="col"].box, #landingpage-boxes-container .sponsorship-container .flexbox div[class*="col"].box {
-        padding-bottom: 45%;
-        max-height: 90%; }
-      #landingpage-boxes-container .priority-container .flexbox div[class*="col"]:last-of-type, #landingpage-boxes-container .sponsorship-container .flexbox div[class*="col"]:last-of-type {
-        margin-right: 0; }
-    #landingpage-boxes-container .priority-container .flexbox div[class*="col-inner"], #landingpage-boxes-container .sponsorship-container .flexbox div[class*="col-inner"] {
-      margin-right: 10px;
-      width: 100%; }
-      #landingpage-boxes-container .priority-container .flexbox div[class*="col-inner"]:last-of-type, #landingpage-boxes-container .sponsorship-container .flexbox div[class*="col-inner"]:last-of-type {
-        margin-right: 0; }
-    #landingpage-boxes-container .priority-container .flexbox .first, #landingpage-boxes-container .sponsorship-container .flexbox .first {
-      height: 800px; }
-    #landingpage-boxes-container .priority-container .flexbox .second, #landingpage-boxes-container .sponsorship-container .flexbox .second {
-      height: 550px; }
-    #landingpage-boxes-container .priority-container .flexbox .third, #landingpage-boxes-container .sponsorship-container .flexbox .third {
-      height: 400px; }
-    #landingpage-boxes-container .priority-container .flexbox .info, #landingpage-boxes-container .sponsorship-container .flexbox .info {
-      height: 400px;
-      background-color: #cbc4bc; }
-    #landingpage-boxes-container .priority-container .flexbox .col, #landingpage-boxes-container .sponsorship-container .flexbox .col {
-      position: relative;
-      overflow: hidden; }
-      #landingpage-boxes-container .priority-container .flexbox .col.one, #landingpage-boxes-container .sponsorship-container .flexbox .col.one {
-        width: 100%; }
-      #landingpage-boxes-container .priority-container .flexbox .col.two, #landingpage-boxes-container .sponsorship-container .flexbox .col.two {
-        width: calc( 99.99% * 1/2 - (10px - 10px * 1 / 2 )); }
-      #landingpage-boxes-container .priority-container .flexbox .col.three, #landingpage-boxes-container .sponsorship-container .flexbox .col.three {
-        width: calc( 99.99% * 1/3 - (10px - 10px * 1 / 3 )); }
-      #landingpage-boxes-container .priority-container .flexbox .col.four, #landingpage-boxes-container .sponsorship-container .flexbox .col.four {
-        width: calc( 99.99% * 1/4 - (10px - 10px * 1 / 4 )); }
-      #landingpage-boxes-container .priority-container .flexbox .col .image-container, #landingpage-boxes-container .sponsorship-container .flexbox .col .image-container {
-        position: absolute;
-        z-index: 1;
-        width: 100%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .image-container img, #landingpage-boxes-container .sponsorship-container .flexbox .col .image-container img {
-          width: 100%; }
-      #landingpage-boxes-container .priority-container .flexbox .col .donation-panel, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel {
-        margin: 1rem; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .centered {
-          position: absolute;
-          color: white;
-          bottom: 50%;
-          left: 50%;
-          width: 90%;
-          height: 100px;
-          z-index: 20;
-          transform: translate(-50%);
-          transition: bottom ease 0.5s; }
-          #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .centered h1, #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .centered p, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .centered h1, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .centered p, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .centered h1, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .centered p, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .centered h1, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .centered p, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .centered h1, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .centered p, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .centered h1, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .centered p, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .centered h1, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .centered p, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .centered h1, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .centered p {
-            font-family: 'GillSansMTStd-ExtraBold';
-            color: white;
-            text-align: center; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .content, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .content, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .content, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .content {
-          position: absolute;
-          left: 0;
-          bottom: -500px;
-          padding: 1rem 2rem;
-          overflow: hidden;
-          height: 50%;
-          z-index: 20;
-          width: 100%;
-          transition: bottom ease 0.5s; }
-          #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .content.center, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content.center, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content.center, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .content.center, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .content.center, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content.center, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content.center, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .content.center {
-            text-align: center; }
-          #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .content.dark-background, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content.dark-background, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content.dark-background, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .content.dark-background, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .content.dark-background, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content.dark-background, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content.dark-background, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .content.dark-background {
-            background-color: rgba(51, 51, 51, 0.8); }
-            #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .content.dark-background label, #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .content.dark-background p, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content.dark-background label, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content.dark-background p, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content.dark-background label, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content.dark-background p, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .content.dark-background label, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .content.dark-background p, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .content.dark-background label, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .content.dark-background p, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content.dark-background label, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content.dark-background p, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content.dark-background label, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content.dark-background p, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .content.dark-background label, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .content.dark-background p {
-              color: white; }
-          #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .content.white-background, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content.white-background, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content.white-background, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .content.white-background, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .content.white-background, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content.white-background, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content.white-background, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .content.white-background {
-            background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 100%); }
-            #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .content.white-background label.btn-secondary, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content.white-background label.btn-secondary, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content.white-background label.btn-secondary, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .content.white-background label.btn-secondary, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .content.white-background label.btn-secondary, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content.white-background label.btn-secondary, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content.white-background label.btn-secondary, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .content.white-background label.btn-secondary {
-              color: #f37021; }
-          #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .content h2, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content h2, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content h2, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .content h2, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .content h2, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content h2, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content h2, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .content h2 {
-            font-family: 'GillSansMTStd-ExtraBold';
-            font-size: 1.5rem;
-            color: #00accb; }
-          #landingpage-boxes-container .priority-container .flexbox .col .donation-panel .content h3, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content h3, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content h3, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel .content h3, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel .content h3, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content h3, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content h3, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel .content h3 {
-            color: #fff;
-            font-size: 1.4rem; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-10:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-10:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-10:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-10:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-10:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-10:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-10:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-10:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-10:checked ~ #content-10, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-10:checked ~ #content-10, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-10:checked ~ #content-10, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-10:checked ~ #content-10, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-10:checked ~ #content-10, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-10:checked ~ #content-10, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-10:checked ~ #content-10, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-10:checked ~ #content-10 {
-          bottom: 0; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-9:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-9:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-9:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-9:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-9:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-9:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-9:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-9:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-9:checked ~ #content-9, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-9:checked ~ #content-9, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-9:checked ~ #content-9, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-9:checked ~ #content-9, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-9:checked ~ #content-9, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-9:checked ~ #content-9, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-9:checked ~ #content-9, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-9:checked ~ #content-9 {
-          bottom: 0; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-8:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-8:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-8:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-8:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-8:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-8:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-8:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-8:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-8:checked ~ #content-8, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-8:checked ~ #content-8, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-8:checked ~ #content-8, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-8:checked ~ #content-8, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-8:checked ~ #content-8, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-8:checked ~ #content-8, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-8:checked ~ #content-8, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-8:checked ~ #content-8 {
-          bottom: 0; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-7:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-7:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-7:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-7:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-7:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-7:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-7:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-7:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-7:checked ~ #content-7, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-7:checked ~ #content-7, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-7:checked ~ #content-7, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-7:checked ~ #content-7, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-7:checked ~ #content-7, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-7:checked ~ #content-7, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-7:checked ~ #content-7, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-7:checked ~ #content-7 {
-          bottom: 0; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-6:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-6:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-6:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-6:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-6:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-6:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-6:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-6:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-6:checked ~ #content-6, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-6:checked ~ #content-6, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-6:checked ~ #content-6, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-6:checked ~ #content-6, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-6:checked ~ #content-6, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-6:checked ~ #content-6, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-6:checked ~ #content-6, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-6:checked ~ #content-6 {
-          bottom: 0; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-5:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-5:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-5:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-5:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-5:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-5:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-5:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-5:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-5:checked ~ #content-5, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-5:checked ~ #content-5, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-5:checked ~ #content-5, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-5:checked ~ #content-5, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-5:checked ~ #content-5, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-5:checked ~ #content-5, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-5:checked ~ #content-5, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-5:checked ~ #content-5 {
-          bottom: 0; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-4:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-4:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-4:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-4:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-4:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-4:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-4:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-4:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-4:checked ~ #content-4, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-4:checked ~ #content-4, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-4:checked ~ #content-4, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-4:checked ~ #content-4, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-4:checked ~ #content-4, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-4:checked ~ #content-4, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-4:checked ~ #content-4, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-4:checked ~ #content-4 {
-          bottom: 0; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-3:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-3:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-3:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-3:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-3:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-3:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-3:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-3:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-3:checked ~ #content-3, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-3:checked ~ #content-3, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-3:checked ~ #content-3, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-3:checked ~ #content-3, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-3:checked ~ #content-3, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-3:checked ~ #content-3, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-3:checked ~ #content-3, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-3:checked ~ #content-3 {
-          bottom: 0; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-2:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-2:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-2:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-2:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-2:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-2:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-2:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-2:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-2:checked ~ #content-2, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-2:checked ~ #content-2, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-2:checked ~ #content-2, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-2:checked ~ #content-2, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-2:checked ~ #content-2, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-2:checked ~ #content-2, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-2:checked ~ #content-2, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-2:checked ~ #content-2 {
-          bottom: 0; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-1:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-1:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-1:checked ~ .centered, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-1:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-1:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-1:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-1:checked ~ .centered, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-1:checked ~ .centered {
-          bottom: 70%; }
-        #landingpage-boxes-container .priority-container .flexbox .col .donation-panel #input-1:checked ~ #content-1, #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel #input-1:checked ~ #content-1, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel #input-1:checked ~ #content-1, #landingpage-boxes-container .priority-container .flexbox .col .sponsorship-panel #input-1:checked ~ #content-1, #landingpage-boxes-container .sponsorship-container .flexbox .col .donation-panel #input-1:checked ~ #content-1, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel #input-1:checked ~ #content-1, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel #input-1:checked ~ #content-1, #landingpage-boxes-container .sponsorship-container .flexbox .col .sponsorship-panel #input-1:checked ~ #content-1 {
-          bottom: 0; }
-      #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel h1, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel h1, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel h1, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel h1 {
-        font-size: 2.2rem; }
-      #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content {
-        height: 220px;
-        bottom: -150px; }
-        #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel .content h2, #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel .content h2, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel .content h2, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel .content h2 {
-          font-size: 1.6  rem; }
-      #landingpage-boxes-container .priority-container .flexbox .col .our-work-panel div h2, #landingpage-boxes-container .sponsorship-container .flexbox .col .our-work-panel div h2 {
-        color: #46bc96; }
-      #landingpage-boxes-container .priority-container .flexbox .col .become-active-panel div h2, #landingpage-boxes-container .sponsorship-container .flexbox .col .become-active-panel div h2 {
-        color: #9055a2; }
-
-#landingpage-boxes-container p {
-  font-family: 'latolight', sans-serif;
-  font-size: 1rem; }
-
 #header-container {
   width: 100%;
   margin-left: auto;
@@ -5516,8 +5256,8 @@ div.warning, div.error, div.messages {
   padding: 3px 0; }
   #cookie-bar .fixed {
     position: fixed;
-    padding-bottom: 20px;
-    top: 0;
+    padding-top: 20px;
+    bottom: 0;
     left: 0;
     width: 100%; }
     #cookie-bar .fixed .bottom {
@@ -5706,5 +5446,1446 @@ div.warning, div.error, div.messages {
     #css-root-preload .overlay .letter:after {
       top: -95%;
       box-shadow: 5px 5px 0 0 #565658; }
+
+html {
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+
+@font-face {
+  font-family: 'Lato Light';
+  src: url("/fonts/latolight.woff2") format("woff2"), url("/fonts/latolight.woff") format("woff"); }
+
+@font-face {
+  font-family: 'GillSansMTStd-ExtraBold';
+  src: url("/fonts/gillsans_extrabold.eot");
+  src: url("/fonts/gillsans_extrabold.eot?#iefix") format("embedded-opentype"), url("/fonts/gillsans_extrabold.woff2") format("woff2"), url("/fonts/gillsans_extrabold.ttf") format("truetype"); }
+
+svg {
+  fill: #f37021;
+  width: 60px;
+  height: 60px; }
+  svg text {
+    fill: #fff;
+    font-family: GillSansMTStd-ExtraBold;
+    font-size: 45px; }
+
+p, a {
+  font-family: 'Lato Light', sans-serif;
+  font-size: 1rem; }
+
+h1 {
+  font-size: 2.2rem; }
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 2.2rem; } }
+
+h2 {
+  font-size: 1.6rem; }
+
+h3 {
+  font-size: 1.4rem; }
+
+h4 {
+  font-size: 1.2rem; }
+
+h5 {
+  font-size: 1.1rem; }
+
+h6 {
+  font-size: 1rem;
+  padding-bottom: 0.9rem; }
+
+h1, h2, h3, h4, h5, h6, p, a, label {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+@media screen and (min-width: 768px) {
+  h1, h2, h3, h4, h5, h6, p, a, label {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem; } }
+
+.box {
+  display: block;
+  max-width: 1340px;
+  margin: 0 auto; }
+
+.donation-box {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: left; }
+  .donation-box .h4 {
+    color: #000000;
+    text-align: center; }
+  .donation-box .donation {
+    display: block;
+    padding: 20px; }
+    .donation-box .donation span {
+      padding: 20px; }
+  .donation-box span {
+    display: inline-block;
+    margin: 0 auto; }
+  .donation-box .euro input {
+    font-family: GillSansMTStd-ExtraBold;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 30px;
+    height: 50px;
+    width: 140px; }
+  .donation-box h4 {
+    text-align: center; }
+  .donation-box .rangeSlider,
+  .donation-box .rangeSlider__fill {
+    background: #ccc5bd;
+    display: block;
+    height: 20px;
+    width: 100%;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: left; }
+  .donation-box .rangeSlider {
+    position: relative; }
+  .donation-box .rangeSlider--disabled {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+    opacity: 0.4; }
+  .donation-box .rangeSlider__fill {
+    background: #f37021;
+    position: absolute;
+    top: 0;
+    z-index: 2; }
+  .donation-box .rangeSlider__handle {
+    background: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    z-index: 3;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 50%; }
+  .donation-box .rangeSlider__handle:after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0));
+    border-radius: 50%; }
+  .donation-box .rangeSlider__handle:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12)); }
+  .donation-box input[type="range"]:focus + .rangeSlider .rangeSlider__handle {
+    box-shadow: 0 0 8px rgba(142, 68, 173, 0.9); }
+  .donation-box .rangeSlider__buffer {
+    z-index: 1;
+    position: absolute;
+    top: 3px;
+    height: 14px;
+    background: #2c3e50;
+    border-radius: 10px; }
+
+#menu-container {
+  position: relative;
+  z-index: 600;
+  background-color: white;
+  font-family: 'Lato Light', sans-serif;
+  text-transform: uppercase; }
+  #menu-container .flexbox {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto; }
+    #menu-container .flexbox.wrap {
+      flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #menu-container .flexbox.wrap {
+        flex-wrap: nowrap; } }
+    #menu-container .flexbox div[class*="column"] {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #menu-container .flexbox div[class*="column"] {
+          margin-right: 0px; } }
+      #menu-container .flexbox div[class*="column"]:last-of-type {
+        margin-right: 0; }
+    #menu-container .flexbox .column-12-3 {
+      position: relative;
+      width: 99.99%;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+      @media screen and (min-width: 768px) {
+        #menu-container .flexbox .column-12-3 {
+          width: calc( 99.99% * 3 / 12 - (0px - 0px * 3 / 12 )); } }
+    #menu-container .flexbox div {
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      vertical-align: middle;
+      height: 50px; }
+      #menu-container .flexbox div:hover {
+        background-color: #eceae7; }
+      #menu-container .flexbox div a {
+        display: block;
+        line-height: 3.5rem;
+        color: #000000;
+        height: 100%;
+        width: 100%; }
+
+@media screen and (max-width: 768px) {
+  #menu-container {
+    display: none; } }
+
+#landingpage-header {
+  position: relative;
+  top: 0px;
+  z-index: 500;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  background-color: #eceae7; }
+  #landingpage-header .content-slider {
+    position: fixed;
+    top: 0px;
+    box-shadow: -14px -14px 39px -17px rgba(0, 0, 0, 0.75);
+    padding-top: 80px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    z-index: 1000;
+    width: 100%;
+    transition: right ease-in 0.3s;
+    background: #f8f7f5;
+    text-align: center; }
+    #landingpage-header .content-slider.hidden-no {
+      right: 0px; }
+      #landingpage-header .content-slider.hidden-no .close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 50px;
+        z-index: 5000;
+        text-align: right;
+        cursor: pointer; }
+    #landingpage-header .content-slider.hidden-yes {
+      right: 400px; }
+      #landingpage-header .content-slider.hidden-yes .close {
+        display: none; }
+      @media screen and (min-width: 361px) {
+        #landingpage-header .content-slider.hidden-yes {
+          right: 768px; } }
+      @media screen and (min-width: 768px) {
+        #landingpage-header .content-slider.hidden-yes {
+          right: 5000px; } }
+    #landingpage-header .content-slider h1, #landingpage-header .content-slider h2, #landingpage-header .content-slider h3, #landingpage-header .content-slider h4, #landingpage-header .content-slider h5, #landingpage-header .content-slider h6, #landingpage-header .content-slider p, #landingpage-header .content-slider a, #landingpage-header .content-slider label {
+      color: #000000; }
+    #landingpage-header .content-slider .donation-box h4 {
+      color: #000000; }
+    #landingpage-header .content-slider img {
+      padding: 0.5rem; }
+    #landingpage-header .content-slider .flexbox {
+      display: flex;
+      max-width: 70%; }
+  #landingpage-header .content-slider .main {
+    background-color: #eceae7;
+    border-bottom: solid #f8f7f5 1px;
+    line-height: 3.5rem;
+    text-transform: uppercase; }
+  #landingpage-header .content-slider .meta {
+    border-bottom: solid #cbc4bc 1px;
+    line-height: 2.5rem; }
+  #landingpage-header img {
+    margin-top: 7px;
+    width: 150px; }
+  @media screen and (min-width: 768px) {
+    #landingpage-header {
+      height: 60px; }
+      #landingpage-header img {
+        width: 200px; } }
+  #landingpage-header #beacon {
+    fill: orange; }
+  #landingpage-header .flexbox {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto; }
+    #landingpage-header .flexbox.wrap {
+      flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #landingpage-header .flexbox.wrap {
+        flex-wrap: nowrap; } }
+    #landingpage-header .flexbox div[class*="column"] {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #landingpage-header .flexbox div[class*="column"] {
+          margin-right: 0px; } }
+      #landingpage-header .flexbox div[class*="column"]:last-of-type {
+        margin-right: 0; }
+    #landingpage-header .flexbox .column-12-4 {
+      position: relative;
+      width: 99.99%;
+      margin-bottom: 0;
+      padding-bottom: 10px;
+      max-height: 100%; }
+      @media screen and (min-width: 768px) {
+        #landingpage-header .flexbox .column-12-4 {
+          width: calc( 99.99% * 4 / 12 - (0px - 0px * 4 / 12 )); } }
+    #landingpage-header .flexbox #main-nav {
+      width: 36px;
+      height: 35px;
+      position: relative;
+      z-index: 300;
+      margin: 8px 6px 6px 12px;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      cursor: pointer; }
+      #landingpage-header .flexbox #main-nav span {
+        display: block;
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: #f37021;
+        border-radius: 2px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out; }
+      #landingpage-header .flexbox #main-nav span:nth-child(1) {
+        top: 0px; }
+      #landingpage-header .flexbox #main-nav span:nth-child(2), #landingpage-header .flexbox #main-nav #nav-icon3 span:nth-child(3) {
+        top: 10px; }
+      #landingpage-header .flexbox #main-nav span:nth-child(4) {
+        top: 20px; }
+      #landingpage-header .flexbox #main-nav .open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%; }
+      #landingpage-header .flexbox #main-nav .open span:nth-child(2) {
+        transform: rotate(45deg); }
+      #landingpage-header .flexbox #main-nav .open span:nth-child(3) {
+        transform: rotate(-45deg); }
+      #landingpage-header .flexbox #main-nav .open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%; }
+    #landingpage-header .flexbox #meta-nav {
+      display: none; }
+    #landingpage-header .flexbox #menu-slider-container {
+      display: block;
+      position: fixed;
+      z-index: 1000;
+      width: 80%;
+      height: 100%;
+      border-right: solid #f37021 10px;
+      background-color: #f8f7f5;
+      box-shadow: 5px 5px 39px 3px rgba(0, 0, 0, 0.75); }
+      #landingpage-header .flexbox #menu-slider-container .main, #landingpage-header .flexbox #menu-slider-container .meta {
+        padding: 10px 0;
+        background-color: #f8f7f5;
+        border-bottom: 1px solid #e1ddd9; }
+      #landingpage-header .flexbox #menu-slider-container .close-container {
+        text-align: right;
+        border-bottom: 1px solid #e1ddd9; }
+        #landingpage-header .flexbox #menu-slider-container .close-container img {
+          width: 40px;
+          margin-right: 10px;
+          margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      #landingpage-header .flexbox div:last-child {
+        text-align: right; }
+      #landingpage-header .flexbox #main-nav {
+        display: none; }
+      #landingpage-header .flexbox #menu-slider-container {
+        display: none; }
+      #landingpage-header .flexbox #meta-nav {
+        display: inline-block; }
+        #landingpage-header .flexbox #meta-nav span a {
+          padding: 0 5px 0 0;
+          font-size: 0.9rem;
+          color: #000000; } }
+
+p.left, h1.left, h2.left, h3.left, h4.left, h5.left, h6.left {
+  text-align: left; }
+
+p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
+  text-align: right; }
+
+#landingpage-boxes-container img, #landingpage-boxes-container video {
+  filter: brightness(100%);
+  transition: filter 500ms linear; }
+
+#landingpage-boxes-container .hover-over img, #landingpage-boxes-container .hover-over video {
+  filter: brightness(70%); }
+
+#landingpage-boxes-container .hidden {
+  display: block;
+  top: 1;
+  left: 1; }
+
+#landingpage-boxes-container label.donation-field {
+  height: 60px;
+  padding: 0 2rem 0 .6rem;
+  margin: 0px; }
+  #landingpage-boxes-container label.donation-field ~ label {
+    display: inline-block;
+    margin-left: 1rem;
+    height: 60px;
+    margin-left: 2rem; }
+    #landingpage-boxes-container label.donation-field ~ label.euro {
+      display: inline-block;
+      font-size: 1.6rem;
+      background-color: white !important;
+      margin: 0 !important;
+      margin-top: 0;
+      padding: 0 !important;
+      color: #cccccc; }
+
+#landingpage-boxes-container label input {
+  display: inline-block;
+  width: 80px;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  height: 60px;
+  border-width: 0;
+  text-align: right; }
+
+#landingpage-boxes-container #container-sponsorship {
+  position: relative;
+  background-color: #eceae7; }
+  #landingpage-boxes-container #container-sponsorship .container-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; }
+    #landingpage-boxes-container #container-sponsorship .container-image img, #landingpage-boxes-container #container-sponsorship .container-image video {
+      position: absolute;
+      left: -9999px;
+      right: -9999px;
+      width: auto;
+      margin: 0 auto;
+      max-width: none; }
+      @media screen and (max-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .container-image img, #landingpage-boxes-container #container-sponsorship .container-image video {
+          height: 100%; } }
+  @media screen and (min-width: 768px) {
+    #landingpage-boxes-container #container-sponsorship .container-image {
+      overflow-y: hidden; }
+      #landingpage-boxes-container #container-sponsorship .container-image img, #landingpage-boxes-container #container-sponsorship .container-image video {
+        width: 100%;
+        left: 0;
+        right: 0; } }
+  #landingpage-boxes-container #container-sponsorship #input-10:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-10:checked ~ #content-10 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship #input-9:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-9:checked ~ #content-9 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship #input-8:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-8:checked ~ #content-8 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship #input-7:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-7:checked ~ #content-7 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship #input-6:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-6:checked ~ #content-6 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship #input-5:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-5:checked ~ #content-5 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship #input-4:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-4:checked ~ #content-4 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship #input-3:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-3:checked ~ #content-3 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship #input-2:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-2:checked ~ #content-2 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship #input-1:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-sponsorship #input-1:checked ~ #content-1 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-sponsorship .flexbox {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto; }
+    #landingpage-boxes-container #container-sponsorship .flexbox.wrap {
+      flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #landingpage-boxes-container #container-sponsorship .flexbox.wrap {
+        flex-wrap: nowrap; } }
+    #landingpage-boxes-container #container-sponsorship .flexbox div[class*="column"] {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .flexbox div[class*="column"] {
+          margin-right: 10px; } }
+      #landingpage-boxes-container #container-sponsorship .flexbox div[class*="column"]:last-of-type {
+        margin-right: 0; }
+    #landingpage-boxes-container #container-sponsorship .flexbox .column-12-12 {
+      position: relative;
+      width: 99.99%;
+      margin-bottom: 10px;
+      padding-bottom: 135%;
+      max-height: 100%; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .flexbox .column-12-12 {
+          width: calc( 99.99% * 12 / 12 - (10px - 10px * 12 / 12 )); } }
+      @media screen and (max-width: 361px) {
+        #landingpage-boxes-container #container-sponsorship .flexbox .column-12-12 {
+          padding-bottom: 90%; } }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .flexbox .column-12-12 {
+          padding-bottom: 45%; } }
+    @media screen and (min-width: 768px) {
+      #landingpage-boxes-container #container-sponsorship .flexbox div {
+        margin-bottom: 0 !important; } }
+  #landingpage-boxes-container #container-sponsorship .content-panel {
+    margin: 1rem; }
+    #landingpage-boxes-container #container-sponsorship .content-panel h1, #landingpage-boxes-container #container-sponsorship .content-panel h2, #landingpage-boxes-container #container-sponsorship .content-panel h3, #landingpage-boxes-container #container-sponsorship .content-panel h4, #landingpage-boxes-container #container-sponsorship .content-panel h5 {
+      font-family: 'GillSansMTStd-ExtraBold'; }
+    #landingpage-boxes-container #container-sponsorship .content-panel .btn-primary {
+      display: inline-block;
+      border-radius: 9px;
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-family: 'Lato Light', sans-serif;
+      padding: 0.8rem 1rem;
+      margin: 5px;
+      text-decoration: none;
+      transition: box-shadow ease 0.5s;
+      background: #f37021;
+      cursor: pointer; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .btn-primary img {
+        padding-right: 0.5rem; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .btn-primary:hover {
+        text-decoration: none;
+        box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.34); }
+    #landingpage-boxes-container #container-sponsorship .content-panel .btn-secondary {
+      display: inline-block;
+      border-radius: 9px;
+      font-family: 'Lato Light', sans-serif;
+      color: #000000;
+      font-size: 1.4rem;
+      margin: 5px;
+      padding: 0.8rem 1rem;
+      text-decoration: none;
+      background: white; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .btn-secondary.orange {
+        border: solid #f37021 0.2rem; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .btn-secondary.blue {
+        border: solid #00accb 0.2rem; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .btn-secondary:hover {
+        text-decoration: none; }
+    #landingpage-boxes-container #container-sponsorship .content-panel .content-header {
+      position: absolute;
+      color: white;
+      bottom: 50%;
+      left: 50%;
+      width: 80%;
+      z-index: 20;
+      transform: translate(-50%, 50%);
+      transition: bottom ease 0.5s;
+      z-index: 100; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .content-header h1, #landingpage-boxes-container #container-sponsorship .content-panel .content-header h2, #landingpage-boxes-container #container-sponsorship .content-panel .content-header h3, #landingpage-boxes-container #container-sponsorship .content-panel .content-header h4, #landingpage-boxes-container #container-sponsorship .content-panel .content-header h5, #landingpage-boxes-container #container-sponsorship .content-panel .content-header h6, #landingpage-boxes-container #container-sponsorship .content-panel .content-header p {
+        color: white;
+        text-align: center; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .content-header h2, #landingpage-boxes-container #container-sponsorship .content-panel .content-header h3, #landingpage-boxes-container #container-sponsorship .content-panel .content-header h4, #landingpage-boxes-container #container-sponsorship .content-panel .content-header h5, #landingpage-boxes-container #container-sponsorship .content-panel .content-header h6 {
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); }
+      @media screen and (max-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .content-panel .content-header h1 {
+          font-size: 1.76rem !important; }
+        #landingpage-boxes-container #container-sponsorship .content-panel .content-header h3 {
+          font-size: 1.12rem !important; } }
+      #landingpage-boxes-container #container-sponsorship .content-panel .content-header p.background {
+        text-align: center; }
+        #landingpage-boxes-container #container-sponsorship .content-panel .content-header p.background span {
+          background-color: #9055a2;
+          padding: 0.3rem 0; }
+    #landingpage-boxes-container #container-sponsorship .content-panel .content-slider {
+      border-left: solid #f37021 10px; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .content-slider .donation-box .rangeSlider__fill {
+        background: #f37021;
+        background: linear-gradient(to right, rgba(243, 112, 33, 0.5) 0%, #f37021 100%); }
+    #landingpage-boxes-container #container-sponsorship .content-panel svg {
+      fill: #f37021; }
+    #landingpage-boxes-container #container-sponsorship .content-panel .content {
+      position: absolute;
+      left: 0;
+      bottom: -500px;
+      padding: 1rem 2rem;
+      overflow: hidden;
+      height: 50%;
+      z-index: 200;
+      width: 100%;
+      transition: bottom ease 0.5s; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .content.center {
+        text-align: center; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .content h2 {
+        font-family: 'GillSansMTStd-ExtraBold';
+        font-size: calc(1.5rem * $header-size);
+        color: #00accb; }
+      #landingpage-boxes-container #container-sponsorship .content-panel .content h3 {
+        color: #fff;
+        font-size: 1.4rem; }
+  #landingpage-boxes-container #container-sponsorship .content-slider {
+    position: fixed;
+    top: 0px;
+    box-shadow: -14px -14px 39px -17px rgba(0, 0, 0, 0.75);
+    padding-top: 80px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    z-index: 1000;
+    width: 100%;
+    transition: left ease-in 0.3s;
+    background: #f8f7f5;
+    text-align: center; }
+    #landingpage-boxes-container #container-sponsorship .content-slider.hidden-no {
+      left: 0px; }
+      #landingpage-boxes-container #container-sponsorship .content-slider.hidden-no .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        z-index: 5000;
+        text-align: right;
+        cursor: pointer; }
+    #landingpage-boxes-container #container-sponsorship .content-slider.hidden-yes {
+      left: 400px; }
+      #landingpage-boxes-container #container-sponsorship .content-slider.hidden-yes .close {
+        display: none; }
+      @media screen and (min-width: 361px) {
+        #landingpage-boxes-container #container-sponsorship .content-slider.hidden-yes {
+          left: 768px; } }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .content-slider.hidden-yes {
+          left: 5000px; } }
+    #landingpage-boxes-container #container-sponsorship .content-slider h1, #landingpage-boxes-container #container-sponsorship .content-slider h2, #landingpage-boxes-container #container-sponsorship .content-slider h3, #landingpage-boxes-container #container-sponsorship .content-slider h4, #landingpage-boxes-container #container-sponsorship .content-slider h5, #landingpage-boxes-container #container-sponsorship .content-slider h6, #landingpage-boxes-container #container-sponsorship .content-slider p, #landingpage-boxes-container #container-sponsorship .content-slider a, #landingpage-boxes-container #container-sponsorship .content-slider label {
+      color: #000000; }
+    #landingpage-boxes-container #container-sponsorship .content-slider .donation-box h4 {
+      color: #000000; }
+    #landingpage-boxes-container #container-sponsorship .content-slider img {
+      padding: 0.5rem; }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox {
+      display: flex;
+      max-width: 70%; }
+  #landingpage-boxes-container #container-sponsorship .content-slider img {
+    padding: 0.5rem 0; }
+  #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header.wrap {
+      flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header.wrap {
+        flex-wrap: nowrap; } }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header div[class*="column"] {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header div[class*="column"] {
+          margin-right: 10px; } }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header div[class*="column"]:last-of-type {
+        margin-right: 0; }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .column-12-12 {
+      position: relative;
+      width: 99.99%;
+      margin-bottom: 10px;
+      padding-bottom: 0; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .column-12-12 {
+          width: calc( 99.99% * 12 / 12 - (10px - 10px * 12 / 12 )); } }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel {
+      margin: 1rem; }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel h1, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel h2, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel h3, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel h4, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel h5 {
+        font-family: 'GillSansMTStd-ExtraBold'; }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .btn-primary {
+        display: inline-block;
+        border-radius: 9px;
+        color: #ffffff;
+        font-size: 1.4rem;
+        font-family: 'Lato Light', sans-serif;
+        padding: 0.8rem 1rem;
+        margin: 5px;
+        text-decoration: none;
+        transition: box-shadow ease 0.5s;
+        background: #842f15;
+        cursor: pointer; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .btn-primary img {
+          padding-right: 0.5rem; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .btn-primary:hover {
+          text-decoration: none;
+          box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.34); }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .btn-secondary {
+        display: inline-block;
+        border-radius: 9px;
+        font-family: 'Lato Light', sans-serif;
+        color: #000000;
+        font-size: 1.4rem;
+        margin: 5px;
+        padding: 0.8rem 1rem;
+        text-decoration: none;
+        background: white; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .btn-secondary.orange {
+          border: solid #f37021 0.2rem; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .btn-secondary.blue {
+          border: solid #00accb 0.2rem; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .btn-secondary:hover {
+          text-decoration: none; }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header {
+        position: absolute;
+        color: white;
+        bottom: 50%;
+        left: 50%;
+        width: 80%;
+        z-index: 20;
+        transform: translate(-50%, 50%);
+        transition: bottom ease 0.5s;
+        z-index: 100; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h1, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h2, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h3, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h4, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h5, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h6, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header p {
+          color: white;
+          text-align: center; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h2, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h3, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h4, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h5, #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h6 {
+          text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); }
+        @media screen and (max-width: 768px) {
+          #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h1 {
+            font-size: 1.32rem !important; }
+          #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header h3 {
+            font-size: 0.84rem !important; } }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header p.background {
+          text-align: center; }
+          #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-header p.background span {
+            background-color: #9055a2;
+            padding: 0.3rem 0; }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-slider {
+        border-left: solid #842f15 10px; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content-slider .donation-box .rangeSlider__fill {
+          background: #842f15;
+          background: linear-gradient(to right, rgba(132, 47, 21, 0.5) 0%, #842f15 100%); }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel svg {
+        fill: #842f15; }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content {
+        position: absolute;
+        left: 0;
+        bottom: -500px;
+        padding: 1rem 2rem;
+        overflow: hidden;
+        height: 50%;
+        z-index: 200;
+        width: 100%;
+        transition: bottom ease 0.5s; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content.center {
+          text-align: center; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content h2 {
+          font-family: 'GillSansMTStd-ExtraBold';
+          font-size: calc(1.5rem * $header-size);
+          color: #00accb; }
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-header .content-panel .content h3 {
+          color: #fff;
+          font-size: 1.4rem; }
+  #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto; }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments.wrap {
+      flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments.wrap {
+        flex-wrap: nowrap; } }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments div[class*="column"] {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments div[class*="column"] {
+          margin-right: 10px; } }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments div[class*="column"]:last-of-type {
+        margin-right: 0; }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments .column-12-3 {
+      position: relative;
+      width: 99.99%;
+      margin-bottom: 10px;
+      padding-bottom: 0; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments .column-12-3 {
+          width: calc( 99.99% * 3 / 12 - (10px - 10px * 3 / 12 )); } }
+  #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-selector {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    max-width: 80%;
+    width: 100%;
+    margin: 0 auto; }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-selector.wrap {
+      flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-selector.wrap {
+        flex-wrap: nowrap; } }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-selector div[class*="column"] {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-selector div[class*="column"] {
+          margin-right: 10px; } }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-selector div[class*="column"]:last-of-type {
+        margin-right: 0; }
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-selector .column-12-3 {
+      position: relative;
+      width: 99.99%;
+      margin-bottom: 10px;
+      padding-bottom: 0; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-selector .column-12-3 {
+          width: calc( 99.99% * 3 / 12 - (10px - 10px * 3 / 12 )); } }
+
+#landingpage-boxes-container #container-2 {
+  position: relative;
+  background-color: none; }
+  #landingpage-boxes-container #container-2 .container-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; }
+    #landingpage-boxes-container #container-2 .container-image img, #landingpage-boxes-container #container-2 .container-image video {
+      position: absolute;
+      left: -9999px;
+      right: -9999px;
+      width: auto;
+      margin: 0 auto;
+      max-width: none; }
+      @media screen and (max-width: 768px) {
+        #landingpage-boxes-container #container-2 .container-image img, #landingpage-boxes-container #container-2 .container-image video {
+          height: 100%; } }
+  @media screen and (min-width: 768px) {
+    #landingpage-boxes-container #container-2 .container-image {
+      overflow-y: hidden; }
+      #landingpage-boxes-container #container-2 .container-image img, #landingpage-boxes-container #container-2 .container-image video {
+        width: 100%;
+        left: 0;
+        right: 0; } }
+  #landingpage-boxes-container #container-2 #input-10:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-10:checked ~ #content-10 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 #input-9:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-9:checked ~ #content-9 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 #input-8:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-8:checked ~ #content-8 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 #input-7:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-7:checked ~ #content-7 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 #input-6:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-6:checked ~ #content-6 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 #input-5:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-5:checked ~ #content-5 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 #input-4:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-4:checked ~ #content-4 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 #input-3:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-3:checked ~ #content-3 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 #input-2:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-2:checked ~ #content-2 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 #input-1:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container #container-2 #input-1:checked ~ #content-1 {
+    bottom: 0; }
+  #landingpage-boxes-container #container-2 .flexbox {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto; }
+    #landingpage-boxes-container #container-2 .flexbox.wrap {
+      flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #landingpage-boxes-container #container-2 .flexbox.wrap {
+        flex-wrap: nowrap; } }
+    #landingpage-boxes-container #container-2 .flexbox div[class*="column"] {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-2 .flexbox div[class*="column"] {
+          margin-right: 10px; } }
+      #landingpage-boxes-container #container-2 .flexbox div[class*="column"]:last-of-type {
+        margin-right: 0; }
+    #landingpage-boxes-container #container-2 .flexbox .column-12-12 {
+      position: relative;
+      width: 99.99%;
+      margin-bottom: 10px;
+      padding-bottom: 135%;
+      max-height: 100%; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-2 .flexbox .column-12-12 {
+          width: calc( 99.99% * 12 / 12 - (10px - 10px * 12 / 12 )); } }
+      @media screen and (max-width: 361px) {
+        #landingpage-boxes-container #container-2 .flexbox .column-12-12 {
+          padding-bottom: 90%; } }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-2 .flexbox .column-12-12 {
+          padding-bottom: 45%; } }
+  #landingpage-boxes-container #container-2 .content-panel {
+    margin: 1rem; }
+    #landingpage-boxes-container #container-2 .content-panel h1, #landingpage-boxes-container #container-2 .content-panel h2, #landingpage-boxes-container #container-2 .content-panel h3, #landingpage-boxes-container #container-2 .content-panel h4, #landingpage-boxes-container #container-2 .content-panel h5 {
+      font-family: 'GillSansMTStd-ExtraBold'; }
+    #landingpage-boxes-container #container-2 .content-panel .btn-primary {
+      display: inline-block;
+      border-radius: 9px;
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-family: 'Lato Light', sans-serif;
+      padding: 0.8rem 1rem;
+      margin: 5px;
+      text-decoration: none;
+      transition: box-shadow ease 0.5s;
+      background: #9055a2;
+      cursor: pointer; }
+      #landingpage-boxes-container #container-2 .content-panel .btn-primary img {
+        padding-right: 0.5rem; }
+      #landingpage-boxes-container #container-2 .content-panel .btn-primary:hover {
+        text-decoration: none;
+        box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.34); }
+    #landingpage-boxes-container #container-2 .content-panel .btn-secondary {
+      display: inline-block;
+      border-radius: 9px;
+      font-family: 'Lato Light', sans-serif;
+      color: #000000;
+      font-size: 1.4rem;
+      margin: 5px;
+      padding: 0.8rem 1rem;
+      text-decoration: none;
+      background: white; }
+      #landingpage-boxes-container #container-2 .content-panel .btn-secondary.orange {
+        border: solid #f37021 0.2rem; }
+      #landingpage-boxes-container #container-2 .content-panel .btn-secondary.blue {
+        border: solid #00accb 0.2rem; }
+      #landingpage-boxes-container #container-2 .content-panel .btn-secondary:hover {
+        text-decoration: none; }
+    #landingpage-boxes-container #container-2 .content-panel .content-header {
+      position: absolute;
+      color: white;
+      bottom: 50%;
+      left: 50%;
+      width: 80%;
+      z-index: 20;
+      transform: translate(-50%, 50%);
+      transition: bottom ease 0.5s;
+      z-index: 100; }
+      #landingpage-boxes-container #container-2 .content-panel .content-header h1, #landingpage-boxes-container #container-2 .content-panel .content-header h2, #landingpage-boxes-container #container-2 .content-panel .content-header h3, #landingpage-boxes-container #container-2 .content-panel .content-header h4, #landingpage-boxes-container #container-2 .content-panel .content-header h5, #landingpage-boxes-container #container-2 .content-panel .content-header h6, #landingpage-boxes-container #container-2 .content-panel .content-header p {
+        color: white;
+        text-align: center; }
+      #landingpage-boxes-container #container-2 .content-panel .content-header h2, #landingpage-boxes-container #container-2 .content-panel .content-header h3, #landingpage-boxes-container #container-2 .content-panel .content-header h4, #landingpage-boxes-container #container-2 .content-panel .content-header h5, #landingpage-boxes-container #container-2 .content-panel .content-header h6 {
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); }
+      @media screen and (max-width: 768px) {
+        #landingpage-boxes-container #container-2 .content-panel .content-header h1 {
+          font-size: 1.76rem !important; }
+        #landingpage-boxes-container #container-2 .content-panel .content-header h3 {
+          font-size: 1.12rem !important; } }
+      #landingpage-boxes-container #container-2 .content-panel .content-header p.background {
+        text-align: center; }
+        #landingpage-boxes-container #container-2 .content-panel .content-header p.background span {
+          background-color: #9055a2;
+          padding: 0.3rem 0; }
+    #landingpage-boxes-container #container-2 .content-panel .content-slider {
+      border-left: solid #9055a2 10px; }
+      #landingpage-boxes-container #container-2 .content-panel .content-slider .donation-box .rangeSlider__fill {
+        background: #9055a2;
+        background: linear-gradient(to right, rgba(144, 85, 162, 0.5) 0%, #9055a2 100%); }
+    #landingpage-boxes-container #container-2 .content-panel svg {
+      fill: #9055a2; }
+    #landingpage-boxes-container #container-2 .content-panel .content {
+      position: absolute;
+      left: 0;
+      bottom: -500px;
+      padding: 1rem 2rem;
+      overflow: hidden;
+      height: 50%;
+      z-index: 200;
+      width: 100%;
+      transition: bottom ease 0.5s; }
+      #landingpage-boxes-container #container-2 .content-panel .content.center {
+        text-align: center; }
+      #landingpage-boxes-container #container-2 .content-panel .content h2 {
+        font-family: 'GillSansMTStd-ExtraBold';
+        font-size: calc(1.5rem * $header-size);
+        color: #00accb; }
+      #landingpage-boxes-container #container-2 .content-panel .content h3 {
+        color: #fff;
+        font-size: 1.4rem; }
+  #landingpage-boxes-container #container-2 .content-slider {
+    position: fixed;
+    top: 0px;
+    box-shadow: -14px -14px 39px -17px rgba(0, 0, 0, 0.75);
+    padding-top: 80px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    z-index: 1000;
+    width: 100%;
+    transition: left ease-in 0.3s;
+    background: rgba(255, 255, 255, 0.98);
+    text-align: center; }
+    #landingpage-boxes-container #container-2 .content-slider.hidden-no {
+      left: 0px; }
+      #landingpage-boxes-container #container-2 .content-slider.hidden-no .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        z-index: 5000;
+        text-align: right;
+        cursor: pointer; }
+    #landingpage-boxes-container #container-2 .content-slider.hidden-yes {
+      left: 400px; }
+      #landingpage-boxes-container #container-2 .content-slider.hidden-yes .close {
+        display: none; }
+      @media screen and (min-width: 361px) {
+        #landingpage-boxes-container #container-2 .content-slider.hidden-yes {
+          left: 768px; } }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-2 .content-slider.hidden-yes {
+          left: 5000px; } }
+    #landingpage-boxes-container #container-2 .content-slider h1, #landingpage-boxes-container #container-2 .content-slider h2, #landingpage-boxes-container #container-2 .content-slider h3, #landingpage-boxes-container #container-2 .content-slider h4, #landingpage-boxes-container #container-2 .content-slider h5, #landingpage-boxes-container #container-2 .content-slider h6, #landingpage-boxes-container #container-2 .content-slider p, #landingpage-boxes-container #container-2 .content-slider a, #landingpage-boxes-container #container-2 .content-slider label {
+      color: #000000; }
+    #landingpage-boxes-container #container-2 .content-slider .donation-box h4 {
+      color: #000000; }
+    #landingpage-boxes-container #container-2 .content-slider img {
+      padding: 0.5rem; }
+    #landingpage-boxes-container #container-2 .content-slider .flexbox {
+      display: flex;
+      max-width: 70%; }
+  #landingpage-boxes-container #container-2 .content-slider .flexbox-arguments {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    max-width: 85%;
+    width: 100%;
+    margin: 0 auto; }
+    #landingpage-boxes-container #container-2 .content-slider .flexbox-arguments.wrap {
+      flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #landingpage-boxes-container #container-2 .content-slider .flexbox-arguments.wrap {
+        flex-wrap: nowrap; } }
+    #landingpage-boxes-container #container-2 .content-slider .flexbox-arguments div[class*="column"] {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-2 .content-slider .flexbox-arguments div[class*="column"] {
+          margin-right: 10px; } }
+      #landingpage-boxes-container #container-2 .content-slider .flexbox-arguments div[class*="column"]:last-of-type {
+        margin-right: 0; }
+    #landingpage-boxes-container #container-2 .content-slider .flexbox-arguments .column-12-3 {
+      position: relative;
+      width: 99.99%;
+      margin-bottom: 10px;
+      padding-bottom: 0; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container #container-2 .content-slider .flexbox-arguments .column-12-3 {
+          width: calc( 99.99% * 3 / 12 - (10px - 10px * 3 / 12 )); } }
+
+#landingpage-boxes-container .tertiary-container {
+  position: relative;
+  background-color: none; }
+  #landingpage-boxes-container .tertiary-container .container-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; }
+    #landingpage-boxes-container .tertiary-container .container-image img, #landingpage-boxes-container .tertiary-container .container-image video {
+      position: absolute;
+      left: -9999px;
+      right: -9999px;
+      width: auto;
+      margin: 0 auto;
+      max-width: none; }
+      @media screen and (max-width: 768px) {
+        #landingpage-boxes-container .tertiary-container .container-image img, #landingpage-boxes-container .tertiary-container .container-image video {
+          height: 100%; } }
+  @media screen and (min-width: 768px) {
+    #landingpage-boxes-container .tertiary-container .container-image {
+      overflow-y: hidden; }
+      #landingpage-boxes-container .tertiary-container .container-image img, #landingpage-boxes-container .tertiary-container .container-image video {
+        width: 100%;
+        left: 0;
+        right: 0; } }
+  #landingpage-boxes-container .tertiary-container #input-10:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-10:checked ~ #content-10 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container #input-9:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-9:checked ~ #content-9 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container #input-8:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-8:checked ~ #content-8 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container #input-7:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-7:checked ~ #content-7 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container #input-6:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-6:checked ~ #content-6 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container #input-5:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-5:checked ~ #content-5 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container #input-4:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-4:checked ~ #content-4 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container #input-3:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-3:checked ~ #content-3 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container #input-2:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-2:checked ~ #content-2 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container #input-1:checked ~ .centered {
+    bottom: 70%; }
+  #landingpage-boxes-container .tertiary-container #input-1:checked ~ #content-1 {
+    bottom: 0; }
+  #landingpage-boxes-container .tertiary-container .flexbox {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    max-width: 1340px;
+    width: 100%;
+    margin: 0 auto; }
+    #landingpage-boxes-container .tertiary-container .flexbox.wrap {
+      flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      #landingpage-boxes-container .tertiary-container .flexbox.wrap {
+        flex-wrap: nowrap; } }
+    #landingpage-boxes-container .tertiary-container .flexbox div[class*="column"] {
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container .tertiary-container .flexbox div[class*="column"] {
+          margin-right: 10px; } }
+      #landingpage-boxes-container .tertiary-container .flexbox div[class*="column"]:last-of-type {
+        margin-right: 0; }
+    #landingpage-boxes-container .tertiary-container .flexbox .column-12-6 {
+      position: relative;
+      width: 99.99%;
+      margin-bottom: 10px;
+      padding-bottom: 350px;
+      max-height: 100%; }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container .tertiary-container .flexbox .column-12-6 {
+          width: calc( 99.99% * 6 / 12 - (10px - 10px * 6 / 12 )); } }
+    #landingpage-boxes-container .tertiary-container .flexbox img {
+      height: 100%; }
+  #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel {
+    margin: 1rem; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel h1, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel h2, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel h3, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel h4, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel h5 {
+      font-family: 'GillSansMTStd-ExtraBold'; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .btn-primary {
+      display: inline-block;
+      border-radius: 9px;
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-family: 'Lato Light', sans-serif;
+      padding: 0.8rem 1rem;
+      margin: 5px;
+      text-decoration: none;
+      transition: box-shadow ease 0.5s;
+      background: #842f15;
+      cursor: pointer; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .btn-primary img {
+        padding-right: 0.5rem; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .btn-primary:hover {
+        text-decoration: none;
+        box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.34); }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .btn-secondary {
+      display: inline-block;
+      border-radius: 9px;
+      font-family: 'Lato Light', sans-serif;
+      color: #000000;
+      font-size: 1.4rem;
+      margin: 5px;
+      padding: 0.8rem 1rem;
+      text-decoration: none;
+      background: white; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .btn-secondary.orange {
+        border: solid #f37021 0.2rem; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .btn-secondary.blue {
+        border: solid #00accb 0.2rem; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .btn-secondary:hover {
+        text-decoration: none; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header {
+      position: absolute;
+      color: white;
+      bottom: 50%;
+      left: 50%;
+      width: 80%;
+      z-index: 20;
+      transform: translate(-50%, 50%);
+      transition: bottom ease 0.5s;
+      z-index: 100; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h1, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h2, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h3, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h4, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h5, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h6, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header p {
+        color: white;
+        text-align: center; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h2, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h3, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h4, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h5, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h6 {
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); }
+      @media screen and (max-width: 768px) {
+        #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h1 {
+          font-size: 2.2rem !important; }
+        #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header h3 {
+          font-size: 1.4rem !important; } }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header p.background {
+        text-align: center; }
+        #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-header p.background span {
+          background-color: #9055a2;
+          padding: 0.3rem 0; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-slider {
+      border-left: solid #842f15 10px; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content-slider .donation-box .rangeSlider__fill {
+        background: #842f15;
+        background: linear-gradient(to right, rgba(132, 47, 21, 0.5) 0%, #842f15 100%); }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel svg {
+      fill: #842f15; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content {
+      position: absolute;
+      left: 0;
+      bottom: -500px;
+      padding: 1rem 2rem;
+      overflow: hidden;
+      height: 50%;
+      z-index: 200;
+      width: 100%;
+      transition: bottom ease 0.5s; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content.center {
+        text-align: center; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content h2 {
+        font-family: 'GillSansMTStd-ExtraBold';
+        font-size: calc(1.5rem * $header-size);
+        color: #00accb; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-panel .content h3 {
+        color: #fff;
+        font-size: 1.4rem; }
+  #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider {
+    position: fixed;
+    top: 0px;
+    box-shadow: -14px -14px 39px -17px rgba(0, 0, 0, 0.75);
+    padding-top: 80px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    z-index: 1000;
+    width: 100%;
+    transition: left ease-in 0.3s;
+    background: rgba(248, 247, 245, 0.98);
+    text-align: center; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider.hidden-no {
+      left: 0px; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider.hidden-no .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        z-index: 5000;
+        text-align: right;
+        cursor: pointer; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider.hidden-yes {
+      left: 400px; }
+      #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider.hidden-yes .close {
+        display: none; }
+      @media screen and (min-width: 361px) {
+        #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider.hidden-yes {
+          left: 768px; } }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider.hidden-yes {
+          left: 5000px; } }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider h1, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider h2, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider h3, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider h4, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider h5, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider h6, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider p, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider a, #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider label {
+      color: #000000; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider .donation-box h4 {
+      color: #000000; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider img {
+      padding: 0.5rem; }
+    #landingpage-boxes-container .tertiary-container .unsere-arbeit .content-slider .flexbox {
+      display: flex;
+      max-width: 70%; }
+  #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel {
+    margin: 1rem; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel h1, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel h2, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel h3, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel h4, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel h5 {
+      font-family: 'GillSansMTStd-ExtraBold'; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .btn-primary {
+      display: inline-block;
+      border-radius: 9px;
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-family: 'Lato Light', sans-serif;
+      padding: 0.8rem 1rem;
+      margin: 5px;
+      text-decoration: none;
+      transition: box-shadow ease 0.5s;
+      background: #00accb;
+      cursor: pointer; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .btn-primary img {
+        padding-right: 0.5rem; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .btn-primary:hover {
+        text-decoration: none;
+        box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.34); }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .btn-secondary {
+      display: inline-block;
+      border-radius: 9px;
+      font-family: 'Lato Light', sans-serif;
+      color: #000000;
+      font-size: 1.4rem;
+      margin: 5px;
+      padding: 0.8rem 1rem;
+      text-decoration: none;
+      background: white; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .btn-secondary.orange {
+        border: solid #f37021 0.2rem; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .btn-secondary.blue {
+        border: solid #00accb 0.2rem; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .btn-secondary:hover {
+        text-decoration: none; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header {
+      position: absolute;
+      color: white;
+      bottom: 50%;
+      left: 50%;
+      width: 80%;
+      z-index: 20;
+      transform: translate(-50%, 50%);
+      transition: bottom ease 0.5s;
+      z-index: 100; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h1, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h2, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h3, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h4, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h5, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h6, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header p {
+        color: white;
+        text-align: center; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h2, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h3, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h4, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h5, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h6 {
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8); }
+      @media screen and (max-width: 768px) {
+        #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h1 {
+          font-size: 2.2rem !important; }
+        #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header h3 {
+          font-size: 1.4rem !important; } }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header p.background {
+        text-align: center; }
+        #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-header p.background span {
+          background-color: #9055a2;
+          padding: 0.3rem 0; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-slider {
+      border-left: solid #00accb 10px; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content-slider .donation-box .rangeSlider__fill {
+        background: #00accb;
+        background: linear-gradient(to right, rgba(0, 172, 203, 0.5) 0%, #00accb 100%); }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel svg {
+      fill: #00accb; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content {
+      position: absolute;
+      left: 0;
+      bottom: -500px;
+      padding: 1rem 2rem;
+      overflow: hidden;
+      height: 50%;
+      z-index: 200;
+      width: 100%;
+      transition: bottom ease 0.5s; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content.center {
+        text-align: center; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content h2 {
+        font-family: 'GillSansMTStd-ExtraBold';
+        font-size: calc(1.5rem * $header-size);
+        color: #00accb; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-panel .content h3 {
+        color: #fff;
+        font-size: 1.4rem; }
+  #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider {
+    position: fixed;
+    top: 0px;
+    box-shadow: -14px -14px 39px -17px rgba(0, 0, 0, 0.75);
+    padding-top: 80px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+    z-index: 1000;
+    width: 100%;
+    transition: left ease-in 0.3s;
+    background: rgba(248, 247, 245, 0.98);
+    text-align: center; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider.hidden-no {
+      left: 0px; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider.hidden-no .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 50px;
+        z-index: 5000;
+        text-align: right;
+        cursor: pointer; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider.hidden-yes {
+      left: 400px; }
+      #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider.hidden-yes .close {
+        display: none; }
+      @media screen and (min-width: 361px) {
+        #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider.hidden-yes {
+          left: 768px; } }
+      @media screen and (min-width: 768px) {
+        #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider.hidden-yes {
+          left: 5000px; } }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider h1, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider h2, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider h3, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider h4, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider h5, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider h6, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider p, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider a, #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider label {
+      color: #000000; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider .donation-box h4 {
+      color: #000000; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider img {
+      padding: 0.5rem; }
+    #landingpage-boxes-container .tertiary-container .aktiv-werden .content-slider .flexbox {
+      display: flex;
+      max-width: 70%; }
 
 /*# sourceMappingURL=style.css.map*/

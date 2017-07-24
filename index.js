@@ -1,9 +1,16 @@
 require('normalize.css')
 require('./scss/style.js')
 require('./images')
-import { getQueryVariable } from './js/helpers'
+import { getQueryVariable, getElementDimensions, setImages, lazyLoadImage } from './js/helpers'
 
 let currentContainer = ''
+let documentDimensions = {}
+
+let boxes = document.getElementsByClassName('box')
+let activeElement = {}
+let activeMode = ''
+
+let lastMove = 0;
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -12,37 +19,23 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-// Get image position right:
+documentDimensions = getElementDimensions(document.documentElement)
+if (documentDimensions.width > 375) {
+    let img = document.getElementById("intro-video")
+    let video = img.nextElementSibling
 
-function setImages () {
-    var containerImage = ''
-    var standardWindowHeight = 600
-    var headerHeight = 60
-    var diffHeight = 0    
-    var clientHeight = document.documentElement.clientHeight
-    containerImage = document.getElementsByClassName('container-image')
-    Array.prototype.forEach.call(containerImage, function(e,i,a) {
-        if (clientHeight - headerHeight < standardWindowHeight && clientHeight > 400) {
-            diffHeight = standardWindowHeight - clientHeight
-            e.parentNode.style.paddingBottom = clientHeight + 'px'
-            e.style.height = clientHeight + 30 + 'px'
-            console.log('clientHeight' + clientHeight)
-            console.log('offset' + e.childNodes[1].offsetHeight)
-        }
-        if(e.offsetHeight >= e.childNodes[1].offsetHeight) {
-            
-            e.childNodes[1].style.height = e.offsetHeight + 'px'
-            e.childNodes[1].style.width = 'auto'
-        } else {
-            e.childNodes[1].style.width = e.offsetWidth + 'px'
-            e.childNodes[1].style.height = 'auto'
-        }
-    })
+    video.oncanplay = function() {
+        video.style.visibility = 'visible'
+        video.style.display = 'block'
+        img.style.visibility = 'hidden'
+        img.style.display = 'none'
+        video.play();
+        video.playbackRate = 0.5
+    }
 }
 
 window.onload = function() {
 
-    document.getElementById("intro-video").play();
     setImages()
 
 }
@@ -52,35 +45,37 @@ window.onresize = function () {
     setImages()
 }
 
-document.addEventListener('mouseover', function (e) {
 
-    const target1 = e.target.offsetParent
-    const target2 = e.target.offsetParent.offsetParent
+document.body.addEventListener('scroll', function(e) {
+    // do nothing if last move was less than 40 ms ago
+    if(Date.now() - lastMove > 200) {
+        // Do stuff
 
-    if(getQueryVariable('action') !== 'open') {
-        if (/column-12/.test(target1.className) || /column-12/.test(target2.className)) {
 
-            if(/hover-over/.test(currentContainer.className)) {
-                currentContainer.classList.remove('hover-over')
-            }
 
-            currentContainer = /column-12/.test(target1.className) ? target1 : target2
-            
-            if(!/hover-over/.test(currentContainer.className) && !/animation/.test(currentContainer.className)) {
-                currentContainer.classList.add('hover-over') 
-            }
+        lastMove = Date.now();
+    } 
+}, false);
 
-            if(/animation/.test(currentContainer.className) && !/hover-over-animation/.test(currentContainer.className)) {
-                currentContainer.classList.add('hover-over-animation') 
-            }
 
-            if(/hover-over-animation/.test(currentContainer.className)) {
-                currentContainer.classList.remove('hover-over-animation') 
-            }
+Array.prototype.forEach.call(boxes, function(e) {
+    e.addEventListener('mouseenter', function(event) {
 
+        let mode = /animation/.test(event.target.className) ? 'hover-animation' : 'hover-over'
+
+        if (Object.keys(activeElement).length === 0 && activeElement.constructor === Object) {
+            activeElement = event.target
+            activeMode = mode
+            activeElement.classList.add(mode)
+        } else {
+            activeElement.classList.remove(activeMode)
+            activeElement = event.target
+            activeElement.classList.add(mode)
+            activeMode = mode
         }
-    }
+    })
 })
+
 
 document.addEventListener('click', function (e)  {
     var open = /open/.test(e.target.className)

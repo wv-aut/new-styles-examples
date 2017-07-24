@@ -1560,659 +1560,11 @@ div.warning, div.error, div.messages {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ----------------------  NEW BEGIN --------------------------
 
-html {
-  overflow: hidden;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
 
-@font-face {
-    font-family: 'Lato Light';
-    src: url('/fonts/latolight.woff2') format('woff2'),
-         url('/fonts/latolight.woff') format('woff');
-}
+@import "preprocessing";
 
-@font-face {
-font-family: 'GillSansMTStd-ExtraBold';
-src: url('/fonts/gillsans_extrabold.eot');
-src: url('/fonts/gillsans_extrabold.eot?#iefix') format('embedded-opentype'),
-     url('/fonts/gillsans_extrabold.woff2') format('woff2'),
-     url('/fonts/gillsans_extrabold.ttf') format('truetype');
-}
-
-// Primary colors
-$orange: #f37021;
-$black: #000000;
-$white: #ffffff;
-$field-grey: #cbc4bc;
-
-// Secondary colors
-$maroon: #842f15;
-$yellow: #fed35f;
-$purple: #9055a2;
-$teal: #006662;
-$blue: #00accb;
-$green: #46bc96;
-
-// Break points
-$break-for-large-screens: 768px;
-$break-for-medium-screens: 361px;
-
-$global-text-color: lighten($black, 80%);
-
-$background-color-dark: rgba(lighten($black, 80%), 0.8);
-$background-color-white: rgba($white, 0.9);
-
-$global-max-width: 1340px;
-
-$gutter: 10px;
-
-$global-text-size: 1;
-
-$global-h1-size: $global-text-size * 2.2;
-$global-h2-size: $global-text-size * 1.6;
-$global-h3-size: $global-text-size * 1.4;
-$global-h4-size: $global-text-size * 1.2;
-$global-h5-size: $global-text-size * 1.1;
-$global-h6-size: $global-text-size * 1;
-
-svg {
-  fill: $orange;
-  width: 60px;
-  height: 60px;
-  text {
-    fill: #fff;
-    font-family: GillSansMTStd-ExtraBold;
-    font-size: 45px;
-  }
-}
-
-@function rem-convert ($size) {
-  @return #{$size}rem;
-}
-
-// Set text color as per background darkness
-@function set-text-color($background-color: $white, $theme-color: $orange) {
-  @if (lightness($background-color) > 50) {
-    @return if($theme-color, $theme-color, $global-text-color);
-  } @else {
-    @return $white; // Darker background, return light color
-  }
-}
-
-p, a {
-  font-family: 'Lato Light', sans-serif;
-  font-size: rem-convert($global-text-size);
-}
-
-h1 {
-  font-size: rem-convert($global-h1-size);
-  @media screen and (min-width: $break-for-large-screens) {
-    font-size: rem-convert($global-h1-size);
-  }
-
-}
-h2 {
-  font-size: rem-convert($global-h2-size);
-
-}
-h3 {
-  font-size: rem-convert($global-h3-size);
-
-}
-h4 {
-  font-size: rem-convert($global-h4-size);
-
-}
-h5 {
-  font-size: rem-convert($global-h5-size);
-
-}
-h6 {
-  font-size: rem-convert($global-h6-size);
-  padding-bottom: rem-convert($global-h6-size * 0.9);
-}
-
-h1, h2, h3, h4, h5, h6, p, a, label {
-  padding-left: 0.5rem;
-      padding-right: 0.5rem;
-}
-
-@media screen and (min-width: $break-for-large-screens) {
-    h1, h2, h3, h4, h5, h6, p, a, label {
-      padding-left: 1.25rem;
-      padding-right: 1.25rem;
-    }
-}
-
-.scroll-no {
-  // height: 100%;
-  // overflow-y: hidden;
-}
-
-.box {
-  display: block;
-  max-width: $global-max-width;
-  margin: 0 auto;
-}
-
-.donation-box {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: $white;
-  text-align: left;
-
-  .h4 {
-    color: $black;
-    text-align: center;
-  }
-  
-  .donation {
-    display: block;
-    padding: 20px;
-    span {
-      padding: 20px;
-    }
-  }
-
-  span {
-    display: inline-block;
-    margin: 0 auto;
-  }
-  
-  .euro {
-   
-    input {
-      font-family: GillSansMTStd-ExtraBold;
-      text-align: right;
-      margin-right: 10px;
-      font-size: 30px;
-      height: 50px;
-      width: 140px;
-    }
-  }
-
-  h4 {
-    text-align: center;
-  }
-
-  .rangeSlider,
-  .rangeSlider__fill {
-      background: lighten($field-grey, 0.5);
-      display: block;
-      height: 20px;
-      width: 100%;
-      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3);
-      border-radius: 10px;
-      text-align: left;
-  }
-
-  .rangeSlider {
-      position: relative;
-  }
-
-  .rangeSlider--disabled {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
-      opacity: 0.4;
-  }
-
-  .rangeSlider__fill {
-      background: $orange;
-      position: absolute;
-      top: 0;
-      z-index: 2;
-  }
-
-  .rangeSlider__handle {
-      background: white;
-      border: 1px solid #ccc;
-      cursor: pointer;
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      top: -10px;
-      z-index: 3;
-      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.1));
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-      border-radius: 50%;
-  }
-
-  .rangeSlider__handle:after {
-      content: "";
-      display: block;
-      width: 18px;
-      height: 18px;
-      margin: auto;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-image: linear-gradient(rgba(0, 0, 0, 0.13), rgba(255, 255, 255, 0));
-      border-radius: 50%;
-  }
-
-  .rangeSlider__handle:active {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.12));
-  }
-
-  input[type="range"]:focus + .rangeSlider .rangeSlider__handle {
-      box-shadow: 0 0 8px rgba(142, 68, 173, 0.9);
-  }
-
-  .rangeSlider__buffer {
-      z-index: 1;
-      position: absolute;
-      top: 3px;
-      height: 14px;
-      background: #2c3e50;
-      border-radius: 10px;
-  }
-}
-
-@mixin container ($background-color: none) {
-  position: relative;
-  background-color: $background-color;
-
-  .container-image {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-        .background-image {
-          position: absolute;
-          left: -9999px;
-          right: -9999px;
-          width: auto;
-          margin: 0 auto;
-          max-width: none;
-          @media screen and (max-width: $break-for-large-screens) {
-              height: 100%;
-          }
-      }
-      .layer-down {
-          position: absolute;
-          width: auto;
-          left: -9999px;
-          right: -9999px;
-          bottom: 0;
-          transition: bottom ease 0.5s;
-      }
-  }
-
-  @media screen and (min-width: $break-for-large-screens) {
-    .container-image {
-      overflow-y: hidden;
-      .background-image {
-            position: absolute;
-            width: 100%;
-            left: 0;
-            right: 0;
-            bottom: 0px;
-      }
-      .layer-down {
-        position: absolute;
-        width: 100%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-      }
-    }
-    .hover-over {
-        .layer-down {
-          bottom: -180px;
-        }
-      }
-  }
-  // Slider css activation
-  $num: 10;
-  @while $num > 0 {
-    #input-#{$num}:checked {
-      &~ .centered {
-        bottom:70%;
-      }
-      &~ #content-#{$num} {
-        bottom: 0;
-      }
-    }
-    $num: $num - 1;
-  }
-}
-
-// height can either be % to keep ratio or px or 0 to discard it
-@mixin flexbox ($gutter, $max-width: $global-max-width, $height: 45%, $margin-bottom: 10px, $split...) {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: stretch;
-  max-width: $max-width;
-  width: 100%;
-  margin: 0 auto;
-  &.wrap {
-    flex-wrap: wrap;
-  }
-  @media screen and (min-width: $break-for-large-screens) {
-    &.wrap {
-      flex-wrap: nowrap;
-    }
-  }
-  div[class*="column"] {
-    @media screen and (min-width: $break-for-large-screens) {
-      margin-right: $gutter;
-    }
-    overflow: hidden;
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-  @if($split) {
-    @include column($height, $margin-bottom, $gutter, $split...);
-  }
-}
-
-@mixin column ($height, $margin-bottom: 10px, $gutter:10px, $split...) {
-    @if($split) {
-    @each $column in $split {
-      .column-12-#{$column} {
-        position: relative;
-        width: 99.99%;
-        margin-bottom: $margin-bottom;
-        @media screen and (min-width: $break-for-large-screens) {
-          width: calc( 99.99% * #{$column} / 12 - (#{$gutter} - #{$gutter} * #{$column} / 12 ));
-        }
-        @if ($height != 0) {
-          @if (unit($height) == '%') {
-                padding-bottom: $height * 3;
-            @media screen and (max-width: $break-for-medium-screens) {
-                padding-bottom: $height * 2;
-            }   
-            @media screen and (min-width: $break-for-large-screens) {
-                padding-bottom: $height * $column / 12;
-            }
-          } @else {
-            padding-bottom: $height;
-          }
-          max-height: 100%;
-        } @else {
-          padding-bottom: 0;
-        }
-      }
-    }
-  }
-}
-
-@mixin content-panel ($background-color: $white, $theme-color: $orange, $header-size: 0.8) {
-  .content-panel {
-    margin: 1rem;
-
-    h1, h2, h3, h4, h5 {
-        font-family: 'GillSansMTStd-ExtraBold';
-    }
-
-    @include call-to-action($background-color, $theme-color);
-
-    .content-header {
-      position: absolute;
-      color: white;
-      bottom: 50%;
-      left: 50%;
-      width: 80%;
-      z-index: 20;
-      transform: translate(-50%, 50%);
-      transition: bottom ease 0.5s;
-      //background: radial-gradient(ellipse at center, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 70%);
-      z-index:100;
-
-      h1, h2, h3, h4, h5, h6, p {
-        color: white;
-        text-align: center;
-      }
-      h2, h3, h4, h5, h6 {
-        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
-      }
-
-      @media screen and (max-width: $break-for-large-screens) {
-        h1 {
-          font-size: rem-convert($global-h1-size * $header-size) !important;
-        }
-        h3 {
-          font-size: rem-convert($global-h3-size * $header-size) !important;
-        }
-      }
-
-      p.background {
-        text-align: center;
-        span {
-        background-color: $purple;
-        padding: 0.3rem 0;
-      }
-      }
-    }
-
-    .content-slider {
-      border-left:solid $theme-color 10px;
-
-      .donation-box {
-        .rangeSlider__fill {
-          background: $theme-color;
-          // background-color: $theme-color;
-          background: linear-gradient(to right, rgba($theme-color, 0.5) 0%, rgba($theme-color, 1) 100%); 
-        }
-      }
-    }
-    svg {
-      fill: $theme-color;
-      text {
-
-      }
-    }
-    .content {
-      position: absolute;
-      left: 0;
-      bottom: -500px;
-      padding: 1rem 2rem;
-      overflow: hidden;
-      height: 50%;
-      z-index: 200;
-      width: 100%;
-      transition: bottom ease 0.5s;
-
-      &.center {
-        text-align: center;
-      }
-
-      h2 {
-        font-family: 'GillSansMTStd-ExtraBold';
-        font-size: calc(1.5rem * $header-size);
-        color: #00accb;
-      }
-
-      h3 {
-        color: #fff;
-        font-size: 1.4rem;
-      }
-    }
-  }
-}
-
-@mixin content-slider ($height: 50%, $background-color: $black, $transparency: 1, $font-color: white, $flexbox-inner-width: 70%, $theme-color: $orange, $direction: left) {
-  .content-slider {
-    position: fixed;
-    top: 0px;
-    box-shadow: -14px -14px 39px -17px rgba(0,0,0,0.75);
-    padding-top: 80px;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-    height: $height;
-    z-index: 1000;
-    width: 100%;
-    transition: $direction ease-in 0.3s;
-    background: rgba($background-color, $transparency);
-    text-align: center;
-    &.hidden-no {
-      @if $direction == left {
-          left: 0px;
-        } @else {
-          right: 0px;
-        }
-      .close {
-        position: absolute;
-        top: 10px;
-        @if $direction == left {
-          right: 10px;
-        } @else {
-          left: 10px;
-        }
-        width: 50px;
-        z-index: 5000;
-        text-align: right;
-        cursor: pointer;
-      }
-    }
-    &.hidden-yes {
-      .close {
-        display: none;
-      }
-      @if $direction == left {
-          left: 400px;
-        } @else {
-          right: 400px;
-        }
-      
-      @media screen and (min-width: $break-for-medium-screens) {
-        @if $direction == left {
-          left: $break-for-large-screens;
-        } @else {
-          right: $break-for-large-screens;
-        }
-      }
-      @media screen and (min-width: $break-for-large-screens) {
-        @if $direction == left {
-          left: 5000px;
-        } @else {
-          right: 5000px;
-        }
-      }
-      
-    }
-
-    h1, h2, h3, h4, h5, h6, p, a, label {
-      @if (lightness($background-color) < 50) {
-        color: $white;
-      } @else {
-        color: $black;
-      }
-    }
-    .donation-box {
-      h4 {
-        color: $black;
-      }
-    }
-    img {
-      padding: 0.5rem;
-    }
-
-    .flexbox {
-      display: flex;
-      max-width: $flexbox-inner-width;
-    }
-  }
-}
-
-@mixin call-to-action ($background-color: $white, $theme-color: $orange) {
-    .btn-primary {
-      display: inline-block;
-      border-radius: 9px;
-      color: set-text-color($background-color, $white);
-      font-size: 1.4rem;
-      font-family: 'Lato Light', sans-serif;
-      padding: 0.8rem 1rem;
-      margin: 5px;
-      text-decoration: none;
-      transition: box-shadow ease 0.5s;
-      background: $theme-color;
-      cursor: pointer;
-
-      img {
-        padding-right: 0.5rem;
-      }
-
-      &:hover {
-        text-decoration: none;
-        box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.34);
-      }
-    }
-
-    .btn-secondary {
-      display: inline-block;
-      border-radius: 9px;
-      font-family: 'Lato Light', sans-serif;
-      color: $black;
-      font-size: 1.4rem;
-      margin: 5px;
-      padding: 0.8rem 1rem;
-      text-decoration: none;
-      background: white;
-      &.orange {
-        border: solid #f37021 0.2rem;
-      }
-      &.blue {
-        border: solid #00accb 0.2rem;
-      }
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
-
-#menu-container {
-  position: relative;
-  z-index: 600;
-  background-color: lighten($field-grey, 100%);
-  font-family: 'Lato Light', sans-serif;
-  text-transform: uppercase;
-  margin-top: -10px;
-
-.flexbox {
-    @include flexbox (0px, $global-max-width, 0, 0, 3);
-    // background-color: lighten($field-grey, 15%);
-    div {
-      display: inline-block;
-      position: relative;
-      text-align: center;
-      vertical-align: middle;
-      height: 50px;
-      &:hover {
-        background-color: lighten($field-grey, 15%);
-      }
-      a {
-        display: block;
-        line-height: 3.5rem;
-        color: $black;
-        height: 100%;
-        width: 100%;
-      }
-    }
-  }
-}
 
 @media screen and (max-width: $break-for-large-screens) {
   #menu-container {
@@ -2227,7 +1579,8 @@ h1, h2, h3, h4, h5, h6, p, a, label {
   width: 100%;
   text-align: center;
   height: 45px;
-  background-color: lighten($field-grey, 15%);
+  background-color: lighten($field-grey, 20%);
+  background-image: url("/images/sand_background.png");
 
   @include content-slider(100%, lighten($field-grey, 20%), 1, white, 70%, $orange, right);
 
@@ -2355,9 +1708,9 @@ h1, h2, h3, h4, h5, h6, p, a, label {
         text-align: right;
       }
 
-      #main-nav { 
-        display: none;
-      }
+      // #main-nav { 
+      //   display: none;
+      // }
 
       #menu-slider-container {
         display: none;
@@ -2387,14 +1740,28 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #landingpage-boxes-container {
 
+  p {
+    // padding: 0 !important;
+  }
+  
+
   img, video {
     filter:brightness(100%);
     transition: filter 500ms linear;
+    max-width: none;
+  }
+
+  .header-img {
+    width: 100%;
+    max-width: 400px;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .hover-over {
     img, video {
-      filter:brightness(70%);
+     filter:brightness(60%);
     }
   }
 
@@ -2437,8 +1804,15 @@ p, h1, h2, h3, h4, h5, h6 {
     }
   }
 
+  .flexbox-arguments{
+    img, h1, h2, h3, h4, h5 {
+      width: 100%;
+    }
+  }
+
   #container-sponsorship {
-    @include container(lighten($field-grey, 15%));
+    @include container(lighten($field-grey, 20%));
+    background-image: url("/images/sand_background.png");
     .flexbox {
       @include flexbox($gutter, $global-max-width, 600px, 10px, 12);
       @media screen and (min-width: $break-for-large-screens) {
@@ -2448,7 +1822,7 @@ p, h1, h2, h3, h4, h5, h6 {
       }
     }
 
-    @include content-panel();
+    @include content-panel($white, $orange, 1.2);
     @include content-slider(100%, lighten($field-grey, 20%), 1);
     .content-slider {
       img {
@@ -2456,7 +1830,7 @@ p, h1, h2, h3, h4, h5, h6 {
       }
       .flexbox-header {
         @include flexbox($gutter, 70%, 0, 10px, 12);
-        @include content-panel($black, $maroon, 0.6);
+        @include content-panel($black, $maroon, 1.4);
         text-align: center;
       }
       .flexbox-arguments {
@@ -2473,11 +1847,19 @@ p, h1, h2, h3, h4, h5, h6 {
     .flexbox {
       @include flexbox($gutter, $global-max-width, 500px, 10px, 12);
     }
-    @include content-panel($white, $purple);
-    @include content-slider(100%, $white, 0.98);
+    @include content-panel($white, $orange, 1.2);
+    @include content-slider(100%, lighten($field-grey, 20%), 1.2);
     .content-slider {
       .flexbox-arguments {
-        @include flexbox($gutter, 85%, 0, 10px, 3);
+        @include flexbox($gutter, 100%, 0, 10px, 3, 4, 6);
+      }
+    }
+    .kindheitsretter {
+      text-align: center;
+      img {
+        width: 100%;
+        max-width: 450px;
+        padding-bottom: 20px;
       }
     }
   }
@@ -2492,11 +1874,11 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     .unsere-arbeit {
       @include content-panel($white, $maroon, 1);
-      @include content-slider(100%, lighten($field-grey, 20%), 0.98);
+      @include content-slider(100%, lighten($field-grey, 15%), 0.98, 60%, $white, $maroon);
     }
     .aktiv-werden {
       @include content-panel($white, $blue, 1);
-      @include content-slider(100%, lighten($field-grey, 20%), 0.98);
+      @include content-slider(100%, lighten($field-grey, 15%), 0.98, 70%, $white, $blue);
     }
   }
 
@@ -2504,5 +1886,33 @@ p, h1, h2, h3, h4, h5, h6 {
     display: none;
   }
 }
+
+#landingpage-boxes-container {
+  .content-slider {
+
+      img, video {
+        filter:brightness(100%);
+      }
+   
+  }
+}
+
+.video-desktop-only {
+  visibility: hidden;
+  display: none;
+}
+
+// @media screen and (min-width: $break-for-large-screens) {
+//   .video-desktop-only {
+//     display: block;
+//     visibility: visible;
+//   }
+//   .image-mobile-only {
+//     display: none;
+//     visibility: hidden;
+//   }
+// }
+
+  
 
 // ----------------------  NEW END --------------------------

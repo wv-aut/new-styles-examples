@@ -7,6 +7,9 @@ const path = require('path')
 var os = require('os')
 const env = process.env.NODE_ENV || 'development'
 
+
+
+
 let config = {
     entry: './index.js',
     output: {
@@ -48,7 +51,11 @@ let config = {
                         }
                     }
                 ]
-            }
+            },
+            {
+                test: /\.(png|jpg|gif)/,
+                use: 'file-loader?name=[name].[ext]&publicPath=fonts&outputPath=images/'
+            }    
         ]
     },
     plugins: [

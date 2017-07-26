@@ -1740,11 +1740,6 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #landingpage-boxes-container {
 
-  p {
-    // padding: 0 !important;
-  }
-  
-
   img, video {
     filter:brightness(100%);
     transition: filter 500ms linear;
@@ -1835,9 +1830,11 @@ p, h1, h2, h3, h4, h5, h6 {
       }
       .flexbox-arguments {
         @include flexbox($gutter, 95%, 0, 10px, 3);
+        padding-bottom: 1rem;
       }
       .flexbox-selector {
-        @include flexbox($gutter, 80%, 0, 10px, 3);
+        @include flexbox($gutter, 95%, 0, 10px, 3);
+        padding-bottom: 1rem;
       }
     }
   }
@@ -1852,6 +1849,7 @@ p, h1, h2, h3, h4, h5, h6 {
     .content-slider {
       .flexbox-arguments {
         @include flexbox($gutter, 100%, 0, 10px, 3, 4, 6);
+        padding-bottom: 1rem;
       }
     }
     .kindheitsretter {
@@ -1874,11 +1872,21 @@ p, h1, h2, h3, h4, h5, h6 {
     }
     .unsere-arbeit {
       @include content-panel($white, $maroon, 1);
-      @include content-slider(100%, lighten($field-grey, 15%), 0.98, 60%, $white, $maroon);
+      @include content-slider(100%, lighten($field-grey, 20%), 1.2);
+      .content-slider {
+        .flexbox-arguments {
+          @include flexbox($gutter, 100%, 0, 10px, 3, 4, 6);
+        }
+    }
     }
     .aktiv-werden {
       @include content-panel($white, $blue, 1);
-      @include content-slider(100%, lighten($field-grey, 15%), 0.98, 70%, $white, $blue);
+      @include content-slider(100%, lighten($field-grey, 20%), 1.2);
+      .content-slider {
+        .flexbox-arguments {
+          @include flexbox($gutter, 100%, 0, 10px, 3, 4, 6);
+        }
+      }
     }
   }
 

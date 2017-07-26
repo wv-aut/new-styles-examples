@@ -12,6 +12,7 @@ let activeMode = ''
 
 let lastMove = 0;
 
+
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -35,22 +36,18 @@ if (documentDimensions.width > 375) {
 }
 
 window.onload = function() {
-
     setImages()
-
+    console.log(window.history.state)
 }
 
 window.onresize = function () {
-
     setImages()
 }
-
 
 document.body.addEventListener('scroll', function(e) {
     // do nothing if last move was less than 40 ms ago
     if(Date.now() - lastMove > 200) {
         // Do stuff
-
 
 
         lastMove = Date.now();
@@ -77,34 +74,64 @@ Array.prototype.forEach.call(boxes, function(e) {
 })
 
 
-document.addEventListener('click', function (e)  {
-    var open = /open/.test(e.target.className)
-    var close = /close/.test(e.target.className)
+function managePages (e) {
+    
+    if (e.target.location != null){
+        var target = e.target.location.search.replace('?info=', '')
+        if (target) {
+            var openBackButton = true
+        } else {
+            var closeBackButton = true
+        }
+    }
+
+    var open = /open/.test(e.target.className) || openBackButton
+    var close = /close/.test(e.target.className) || closeBackButton
     var sponsor = /iAmSponsor/.test(e.target.id)
     var prospect = /iAmProspect/.test(e.target.id)
     var menu = /menu/.test(e.target.className)
-    console.log(open)
     var body = document.body
     var html = document.documentElement
     if(open || close) {
         function suffix (open) {
             return open ? 'yes' : 'no'
         }
-        var elementID = e.target.className.match(/slider-\d*/);
-        if (elementID) {
-            console.log("elementID: " + elementID)
-            var slider = document.getElementById(elementID[0])
+
+        if(e.target.className) {
+            var documentID = e.target.className.match(/slider-\d*/)[0];
+            var slider = document.getElementById(documentID)
             var container = document.getElementById(slider.getAttribute('id').replace('slider', 'container'))
             slider.className = slider.className.replace('hidden-' + suffix(open), 'hidden-' + suffix(!open))
             if (close) {
                // body.scrollTop = container.offsetTop - 60
             }
-            var action = open ? 'open' : 'close'
-            history.pushState({state:1}, "Information", "?action=" + action + "#" + slider.getAttribute('id'));
-            body.className = body.className.replace('scroll-' + suffix(open), 'scroll-' + suffix(!open))
-            html.className = html.className.replace('scroll-' + suffix(open), 'scroll-' + suffix(!open))
+        } else if (target != '') {
+            // use target from windows.history
+            console.log(target)
+            var slider = document.getElementById(target)
+            slider.className = slider.className.replace('hidden-' + suffix(open), 'hidden-' + suffix(!open))
         }
+
+        console.log(history.state.lastHistory)
+        // if (elementID) {
+        //     var slider = document.getElementById(documentID)
+        //     var container = document.getElementById(slider.getAttribute('id').replace('slider', 'container'))
+        //     slider.className = slider.className.replace('hidden-' + suffix(open), 'hidden-' + suffix(!open))
+        //     if (close) {
+        //        // body.scrollTop = container.offsetTop - 60
+        //     }
+        // }
+
+        if (target)
+        var action = open ? 'open' : 'close'
+        console.log(action)
+        history.pushState({lastHistory:slider.getAttribute('id')}, "Information", open ? "?info=" + slider.getAttribute('id') : '?');
+        body.className = body.className.replace('scroll-' + suffix(open), 'scroll-' + suffix(!open))
+        html.className = html.className.replace('scroll-' + suffix(open), 'scroll-' + suffix(!open))
     }
+
+
+
     if(menu) {
         
     }
@@ -118,12 +145,14 @@ document.addEventListener('click', function (e)  {
         setCookie('group', 'prospect', 180)
         location.reload();
     }
+}
 
-}, false)
 
-window.addEventListener("hashchange", function (e) {
+document.addEventListener('click', managePages, false)
 
-}, false);
+// window.addEventListener("hashchange", managePages, false);
+
+window.addEventListener('popstate', managePages);
 
 // then...
 // var giveMeSomeEvents = true; // or false

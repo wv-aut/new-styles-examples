@@ -264,8 +264,10 @@ select {
         } @else {
           padding-bottom: 0;
         }
-        $columnNumber: 12 / 4;
-        &:nth-child($columnNumber) {
+
+        $columnNumber: 12 / #{$column};
+
+        &:nth-child(#{$columnNumber}) {
           margin-right: 0;
         }
       }
@@ -475,7 +477,6 @@ select {
           right: 5000px;
         }
       }
-      
     }
 
     h1, h2, h3, h4, h5, h6, p, a, label {
@@ -515,7 +516,7 @@ select {
       }
     }
     img {
-      padding: 0.5rem;
+      // padding: 0.5rem;
     }
 
     .flexbox {
@@ -528,7 +529,7 @@ select {
 @mixin call-to-action ($background-color: $white, $theme-color: $orange) {
     .btn-primary {
       display: inline-block;
-      border-radius: 9px;
+      border-radius: 10px;
       color: set-text-color($background-color, $white);
       font-size: 1.4rem;
       font-family: 'Lato Light', sans-serif;
@@ -538,7 +539,11 @@ select {
       transition: box-shadow ease 0.5s;
       background: $theme-color;
       cursor: pointer;
-
+      width: 95%;
+      border: 1px solid lighten($theme-color, 5%);
+      @media screen and (min-width: $break-for-large-screens) {
+        width: auto;
+      }
       img {
         padding-right: 0.5rem;
       }
@@ -551,7 +556,7 @@ select {
 
     .btn-secondary {
       display: inline-block;
-      border-radius: 9px;
+      border-radius: 10px;
       font-family: 'Lato Light', sans-serif;
       color: $black;
       font-size: 1.4rem;
@@ -560,6 +565,10 @@ select {
       text-decoration: none;
       background: white;
       border: 1px solid lighten($black, 80%);
+      // width: 95%;
+      // @media screen and (min-width: $break-for-large-screens) {
+      //   width: auto;
+      // }
       &.orange {
         border: solid #f37021 0.2rem;
       }

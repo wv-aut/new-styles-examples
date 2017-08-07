@@ -1821,7 +1821,7 @@ p, h1, h2, h3, h4, h5, h6 {
     @include content-slider(100%, lighten($field-grey, 20%), 1);
     .content-slider {
       img {
-        padding: 0.5rem 0;
+        // padding: 0.5rem 0;
       }
       .flexbox-header {
         @include flexbox($gutter, 70%, 0, 10px, 12);
@@ -1852,6 +1852,7 @@ p, h1, h2, h3, h4, h5, h6 {
         padding-bottom: 1rem;
       }
     }
+
     .kindheitsretter {
       text-align: center;
       img {
@@ -1920,7 +1921,5 @@ p, h1, h2, h3, h4, h5, h6 {
 //     visibility: hidden;
 //   }
 // }
-
-  
 
 // ----------------------  NEW END --------------------------

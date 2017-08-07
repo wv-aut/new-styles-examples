@@ -12,7 +12,6 @@ let activeMode = ''
 
 let lastMove = 0;
 
-
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -49,11 +48,9 @@ document.body.addEventListener('scroll', function(e) {
     if(Date.now() - lastMove > 200) {
         // Do stuff
 
-
         lastMove = Date.now();
     } 
 }, false);
-
 
 Array.prototype.forEach.call(boxes, function(e) {
     e.addEventListener('mouseenter', function(event) {
@@ -73,18 +70,18 @@ Array.prototype.forEach.call(boxes, function(e) {
     })
 })
 
-
 function managePages (e) {
-    
+    e.preventDefault()
+    console.log('e.target.className' + e.target.className)
     if (e.target.location != null){
         var target = e.target.location.search.replace('?info=', '')
         if (target) {
             var openBackButton = true
         } else {
             var closeBackButton = true
+            console.log('closeclose')
         }
     }
-
     var open = /open/.test(e.target.className) || openBackButton
     var close = /close/.test(e.target.className) || closeBackButton
     var sponsor = /iAmSponsor/.test(e.target.id)
@@ -92,6 +89,8 @@ function managePages (e) {
     var menu = /menu/.test(e.target.className)
     var body = document.body
     var html = document.documentElement
+    console.log('open: ' + open)
+    console.log('close: ' + close)
     if(open || close) {
         function suffix (open) {
             return open ? 'yes' : 'no'
@@ -105,14 +104,14 @@ function managePages (e) {
             if (close) {
                // body.scrollTop = container.offsetTop - 60
             }
-        } else if (target != '') {
-            // use target from windows.history
-            console.log(target)
-            var slider = document.getElementById(target)
+        } 
+        else {
+            var slider = document.getElementsByClassName('hidden-no')[0]
             slider.className = slider.className.replace('hidden-' + suffix(open), 'hidden-' + suffix(!open))
+            console.log('slider.className' + slider.className)
         }
 
-        console.log(history.state.lastHistory)
+        
         // if (elementID) {
         //     var slider = document.getElementById(documentID)
         //     var container = document.getElementById(slider.getAttribute('id').replace('slider', 'container'))
@@ -122,15 +121,12 @@ function managePages (e) {
         //     }
         // }
 
-        if (target)
+        // if (target)
         var action = open ? 'open' : 'close'
-        console.log(action)
-        history.pushState({lastHistory:slider.getAttribute('id')}, "Information", open ? "?info=" + slider.getAttribute('id') : '?');
+        window.history.pushState({lastHistory:slider.getAttribute('id')}, slider.getAttribute('id'), open ? "?infos=" + slider.getAttribute('id') : '/');
         body.className = body.className.replace('scroll-' + suffix(open), 'scroll-' + suffix(!open))
         html.className = html.className.replace('scroll-' + suffix(open), 'scroll-' + suffix(!open))
     }
-
-
 
     if(menu) {
         
@@ -147,13 +143,6 @@ function managePages (e) {
     }
 }
 
-
 document.addEventListener('click', managePages, false)
 
-// window.addEventListener("hashchange", managePages, false);
-
 window.addEventListener('popstate', managePages);
-
-// then...
-// var giveMeSomeEvents = true; // or false
-// slider.rangeSlider.update({min : 0, max : 20, step : 0.5, value : 1.5, buffer : 70}, giveMeSomeEvents);

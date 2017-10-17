@@ -1,7 +1,10 @@
 require('normalize.css')
 require('./scss/style.js')
 require('./images')
+import LazyLoad from 'vanilla-lazyload'
 import { getQueryVariable, getElementDimensions, setImages, lazyLoadImage } from './js/helpers'
+
+var myLazyLoad = new LazyLoad()
 
 let currentContainer = ''
 let documentDimensions = {}
@@ -13,9 +16,9 @@ let activeMode = ''
 let lastMove = 0;
 
 function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
+    const d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
+    const expires = "expires="+ d.toUTCString();
     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
@@ -36,7 +39,6 @@ if (documentDimensions.width > 375) {
 
 window.onload = function() {
     setImages()
-    console.log(window.history.state)
 }
 
 window.onresize = function () {
@@ -47,14 +49,13 @@ document.body.addEventListener('scroll', function(e) {
     // do nothing if last move was less than 40 ms ago
     if(Date.now() - lastMove > 200) {
         // Do stuff
-
+        console.log(window.innerHeight)
         lastMove = Date.now();
     } 
 }, false);
 
 Array.prototype.forEach.call(boxes, function(e) {
     e.addEventListener('mouseenter', function(event) {
-
         let mode = /animation/.test(event.target.className) ? 'hover-animation' : 'hover-over'
 
         if (Object.keys(activeElement).length === 0 && activeElement.constructor === Object) {
@@ -71,27 +72,31 @@ Array.prototype.forEach.call(boxes, function(e) {
 })
 
 function managePages (e) {
-    e.preventDefault()
-    console.log('e.target.className' + e.target.className)
+    let open = /open/.test(e.target.className) 
+    let close = /close/.test(e.target.className)
+    if(open || close) {
+        console.log('Click')
+        e.preventDefault()
+    }
+    let openBackButton = false
+    let closeBackButton = false
     if (e.target.location != null){
         var target = e.target.location.search.replace('?info=', '')
         if (target) {
-            var openBackButton = true
+            openBackButton = true
+            open = true
         } else {
-            var closeBackButton = true
-            console.log('closeclose')
+            closeBackButton = true
+            close = true
         }
     }
-    var open = /open/.test(e.target.className) || openBackButton
-    var close = /close/.test(e.target.className) || closeBackButton
-    var sponsor = /iAmSponsor/.test(e.target.id)
-    var prospect = /iAmProspect/.test(e.target.id)
-    var menu = /menu/.test(e.target.className)
-    var body = document.body
-    var html = document.documentElement
-    console.log('open: ' + open)
-    console.log('close: ' + close)
+    let sponsor = /iAmSponsor/.test(e.target.id)
+    let prospect = /iAmProspect/.test(e.target.id)
+    let menu = /menu/.test(e.target.className)
+    let body = document.body
+    let html = document.documentElement
     if(open || close) {
+
         function suffix (open) {
             return open ? 'yes' : 'no'
         }
@@ -108,10 +113,8 @@ function managePages (e) {
         else {
             var slider = document.getElementsByClassName('hidden-no')[0]
             slider.className = slider.className.replace('hidden-' + suffix(open), 'hidden-' + suffix(!open))
-            console.log('slider.className' + slider.className)
         }
 
-        
         // if (elementID) {
         //     var slider = document.getElementById(documentID)
         //     var container = document.getElementById(slider.getAttribute('id').replace('slider', 'container'))

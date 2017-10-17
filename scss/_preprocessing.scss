@@ -7,16 +7,16 @@ html {
 
 @font-face {
     font-family: 'Lato Light';
-    src: url('/fonts/latolight.woff2') format('woff2'),
-         url('/fonts/latolight.woff') format('woff');
+    src: url('https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/static/home/fonts/latolight.woff2') format('woff2'),
+         url('https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/static/home/fonts/latolight.woff') format('woff');
 }
 
 @font-face {
 font-family: 'GillSansMTStd-ExtraBold';
-src: url('/fonts/gillsans_extrabold.eot');
-src: url('/fonts/gillsans_extrabold.eot?#iefix') format('embedded-opentype'),
-     url('/fonts/gillsans_extrabold.woff2') format('woff2'),
-     url('/fonts/gillsans_extrabold.ttf') format('truetype');
+src: url('https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/static/home/fonts/gillsans_extrabold.eot');
+src: url('https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/static/home/fonts/gillsans_extrabold.eot?#iefix') format('embedded-opentype'),
+     url('https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/static/home/fonts/gillsans_extrabold.woff2') format('woff2'),
+     url('https://secure.worldvision.at/sites/worldvision.at/themes/worldvision_new/static/home/fonts/gillsans_extrabold.ttf') format('truetype');
 }
 
 // Primary colors
@@ -215,8 +215,12 @@ select {
   position: relative;
   overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   align-items: stretch;
-  max-width: $max-width;
+  max-width: 100%;
+  @media screen and (min-width: $break-for-large-screens) {
+    max-width: $max-width;
+  }
   width: 100%;
   margin: 0 auto;
   &.wrap {
@@ -267,8 +271,9 @@ select {
 
         $columnNumber: 12 / #{$column};
 
-        &:nth-child(#{$columnNumber}) {
+        &:nth-child(#{$columnNumber}n) {
           margin-right: 0;
+          
         }
       }
     }
@@ -277,7 +282,7 @@ select {
 
 @mixin content-panel ($background-color: $white, $theme-color: $orange, $header-size: 0.8) {
   .content-panel {
-    margin: 1rem;
+    // margin: 1rem;
 
     h1, h2 {
         font-family: 'GillSansMTStd-ExtraBold';
@@ -372,14 +377,18 @@ select {
     position: fixed;
     top: 0px;
     box-shadow: -14px -14px 39px -17px rgba(0,0,0,0.75);
-    padding-top: 80px;
-    overflow-y: scroll;
+    padding-top: 65px;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+    overflow: auto;
     -webkit-overflow-scrolling: touch;
     height: $height;
     z-index: 1000;
-    width: 97%;
-    transition: $direction ease-in 0.3s;
-    border-left:solid $theme-color 1px;
+    width: 100%;
+    // transition: $direction ease-in 0.3s;
+    transition: transform 200ms ease-in-out;
+    border-left:solid $theme-color 5px;
     background: rgba($background-color, $transparency);
     background-image: url("/images/sand_background.png");
     text-align: center;
@@ -417,9 +426,11 @@ select {
     }
     &.hidden-no {
       @if $direction == left {
-          left: 3%;
+          // left: 3%;
+          transform: translateX(0)
         } @else {
-          right:3%;
+          // right:3%;
+          transform: translateX(0)
         }
       div.close {
         background-color: $theme-color;
@@ -439,10 +450,11 @@ select {
             width: 50px;
             height: 50px;
             position: relative;
+            padding: 5px;
             transform: translateZ(0); 
         }
         position: absolute;
-            top: 0px;
+        top: 0px;
         &.top {
             position: absolute;
             top: 0px;
@@ -458,23 +470,28 @@ select {
         display: none;
       }
       @if $direction == left {
-          left: 400px;
+          //left: 400px;
+          transform: translateX($break-for-large-screens);
         } @else {
-          right: 400px;
+          //right: 400px;
+          transform: translateX(-$break-for-large-screens);
         }
       
-      @media screen and (min-width: $break-for-medium-screens) {
+      @media screen and (min-width: $break-for-large-screens) {
         @if $direction == left {
-          left: $break-for-large-screens;
+          //left: $break-for-large-screens;
+          transform: translateX($break-for-large-screens);
         } @else {
-          right: $break-for-large-screens;
+          //right: $break-for-large-screens;
+          transform: translateX(-$break-for-large-screens);
         }
       }
       @media screen and (min-width: $break-for-large-screens) {
         @if $direction == left {
-          left: 5000px;
+          // left: 5000px;
+          transform: translateX(5000px);
         } @else {
-          right: 5000px;
+          transform: translateX(-5000px);
         }
       }
     }
@@ -524,6 +541,16 @@ select {
       max-width: $flexbox-inner-width;
     }
   }
+  @media screen and (min-width: $break-for-large-screens) {
+    .column-12-6:nth-child(2) {
+      .content-slider {
+        &.hidden-no {
+          transform: translateX(-50%)
+        }
+      }
+    }
+  }
+
 }
 
 @mixin call-to-action ($background-color: $white, $theme-color: $orange) {
@@ -534,12 +561,12 @@ select {
       font-size: 1.4rem;
       font-family: 'Lato Light', sans-serif;
       padding: 0.8rem 1rem;
-      margin: 5px;
+      margin: 3%;
       text-decoration: none;
       transition: box-shadow ease 0.5s;
       background: $theme-color;
       cursor: pointer;
-      width: 95%;
+      width: 94%;
       border: 1px solid lighten($theme-color, 5%);
       @media screen and (min-width: $break-for-large-screens) {
         width: auto;
@@ -560,11 +587,15 @@ select {
       font-family: 'Lato Light', sans-serif;
       color: $black;
       font-size: 1.4rem;
-      margin: 5px;
+      margin: 3%;
+      width: 94%;
       padding: 0.8rem 1rem;
       text-decoration: none;
       background: white;
       border: 1px solid lighten($black, 80%);
+      @media screen and (min-width: $break-for-large-screens) {
+        width: auto;
+      }
       // width: 95%;
       // @media screen and (min-width: $break-for-large-screens) {
       //   width: auto;

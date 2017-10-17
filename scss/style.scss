@@ -1419,7 +1419,7 @@ div.warning, div.error, div.messages {
     .loading {
       margin: auto;
       display: block;
-      -webkit-transform:scale(0.71)
+      transform:scale(0.71)
     }
 
     .loading > div {
@@ -1585,6 +1585,11 @@ div.warning, div.error, div.messages {
   @include content-slider(100%, lighten($field-grey, 20%), 1, white, 70%, $orange, right);
 
   .content-slider {
+    width: 100%;
+    @media screen and (min-width: $break-for-medium-screens) {
+      width: 400px;
+    }
+    
     .main {
         background-color: lighten($field-grey, 15%);
         border-bottom:solid lighten($field-grey, 20%) 1px;
@@ -1597,7 +1602,7 @@ div.warning, div.error, div.messages {
     }
   }
 
-  img {
+  img:not(.close) {
     margin-top: 7px;
     width: 150px;
   }
@@ -1726,6 +1731,11 @@ div.warning, div.error, div.messages {
         }
       }
     }
+
+    div[class*="column"] {
+      width: 33%;
+    }
+
   }
 }
 
@@ -1848,7 +1858,7 @@ p, h1, h2, h3, h4, h5, h6 {
     @include content-slider(100%, lighten($field-grey, 20%), 1.2);
     .content-slider {
       .flexbox-arguments {
-        @include flexbox($gutter, 100%, 0, 10px, 3, 4, 6);
+        @include flexbox($gutter, 95%, 0, 10px, 3, 4, 6);
         padding-bottom: 1rem;
       }
     }
@@ -1871,22 +1881,19 @@ p, h1, h2, h3, h4, h5, h6 {
         height: 100%;
       }
     }
+
     .unsere-arbeit {
       @include content-panel($white, $maroon, 1);
-      @include content-slider(100%, lighten($field-grey, 20%), 1.2);
-      .content-slider {
-        .flexbox-arguments {
-          @include flexbox($gutter, 100%, 0, 10px, 3, 4, 6);
-        }
     }
-    }
+
     .aktiv-werden {
       @include content-panel($white, $blue, 1);
-      @include content-slider(100%, lighten($field-grey, 20%), 1.2);
-      .content-slider {
+    }
+
+    @include content-slider(100%, lighten($field-grey, 20%), 1.2);
+    .content-slider {
         .flexbox-arguments {
-          @include flexbox($gutter, 100%, 0, 10px, 3, 4, 6);
-        }
+          @include flexbox($gutter, 95%, 0, 10px, 3, 4, 6);
       }
     }
   }
@@ -1898,12 +1905,35 @@ p, h1, h2, h3, h4, h5, h6 {
 
 #landingpage-boxes-container {
   .content-slider {
-
       img, video {
         filter:brightness(100%);
       }
-   
   }
+}
+
+#footer-container-new {
+  @include container();
+  .flexbox {
+    @include flexbox($gutter, $global-max-width, 220px, 10px, 4);
+  }
+  .kontakt {
+    @include content-panel(lighten($black, 5%), $maroon, 1);
+    background-color: lighten($field-grey, 20%);
+  }
+  .social {
+    @include content-panel(black, $maroon, 1);
+    background-color: lighten($field-grey, 20%);
+  }
+  .guetesiegel {
+    @include content-panel(black, $maroon, 1);
+    background-color: lighten($field-grey, 20%);
+  }
+
+    h1, h2, h3, p, a {
+      text-shadow: none !important;
+      color: lighten($black, 20%) !important;
+    }
+
 }
 
 .video-desktop-only {

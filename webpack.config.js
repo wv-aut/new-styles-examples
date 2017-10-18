@@ -1,14 +1,14 @@
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const UglifyJSPlugin = require('uglifyjs-webpack-plugin')
+const WebpackCleanupPlugin = require('webpack-cleanup-plugin')
 const webpack = require('webpack')
 const path = require('path')
 var os = require('os')
 const env = process.env.NODE_ENV || 'development'
 
-
-
+console.log(process.env.NODE_ENV)
 
 let config = {
     entry: './index.js',
@@ -59,8 +59,7 @@ let config = {
         ]
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin(),
-        new HtmlWebpackPlugin({template: './index.html'}),
+        new UglifyJSPlugin(),
         new ExtractTextPlugin('style.css')
     ],
     devServer: {
@@ -68,6 +67,23 @@ let config = {
         compress: true,
         port: 8000
     }
+}
+
+if (process.env.NODE_ENV === 'production') {
+    config.output.publicPath = '/sites/worldvision.at/modules/wv_homepage_fy18/dist/'
+    config.output.path = path.resolve(__dirname, './dist')
+    config.plugins.push(new HtmlWebpackPlugin({
+        template: './index.html',
+        filename: './templates/new_homepage.tpl.php'
+    }),
+    new WebpackCleanupPlugin()
+)
+} else {
+    config.plugins.push(
+        new HtmlWebpackPlugin({
+            template: './index.html',
+        })
+    ) 
 }
 
 if (env === 'development') {

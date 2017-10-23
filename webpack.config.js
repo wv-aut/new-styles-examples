@@ -70,7 +70,7 @@ let config = {
 }
 
 if (process.env.NODE_ENV === 'production') {
-    config.output.publicPath = '/sites/worldvision.at/modules/wv_homepage_fy18/dist/'
+    config.output.publicPath = '/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/'
     config.output.path = path.resolve(__dirname, './dist')
     config.plugins.push(new HtmlWebpackPlugin({
         template: './index.html',

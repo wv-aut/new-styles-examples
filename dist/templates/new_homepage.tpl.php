@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   })
 </script>
 <!-- End Google Tag Manager -->
-<link href="/sites/worldvision.at/modules/wv_homepage_fy18/dist/style.css" rel="stylesheet"></head>
+<link href="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/style.css" rel="stylesheet"></head>
 <body class="scroll-yes html front not-logged-in no-sidebars page-node page-node- page-node-57786 page-node- node-type-generic-page i18n-de" >
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJP23D"
@@ -547,5 +547,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 <script type="text/javascript" src="http://www.worldvision.at/sites/worldvision.at/themes/worldvision_new/bower_components/REM-unit-polyfill/js/rem.min.js?omgc4t"></script>
-<script type="text/javascript" src="/sites/worldvision.at/modules/wv_homepage_fy18/dist/bundle.js"></script></body>
+<script type="text/javascript" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/bundle.js"></script></body>
 </html>

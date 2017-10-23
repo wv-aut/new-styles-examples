@@ -74,7 +74,7 @@ if (process.env.NODE_ENV === 'production') {
     config.output.path = path.resolve(__dirname, './dist')
     config.plugins.push(new HtmlWebpackPlugin({
         template: './index.html',
-        filename: './templates/new_homepage.tpl.php'
+        filename: './templates/page--new-homepage.tpl.php'
     }),
     new WebpackCleanupPlugin()
 )

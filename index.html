@@ -65,7 +65,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <div class="column-12-4">
-      <a href="http://www.worldvision.at"><img src="front_new/images/wv-logo-new.svg" alt="World Vision Logo"></a>
+      <a href="http://www.worldvision.at"><img src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/wv-logo-new.svg" alt="World Vision Logo"></a>
     </div>
     <div class="column-12-4">
       <div id="meta-nav">
@@ -79,7 +79,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   <div id="slider-0" class="content-slider hidden-yes">
     <div class="close top slider-0">
-      <div class="close-container"><img class="close icon slider-0" src="front_new/images/close_w.svg" alt="Schließen"></div>
+      <div class="close-container"><img class="close icon slider-0" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/close_w.svg" alt="Schließen"></div>
     </div>
     
     <div class="main"><a href="kinderpatenschaft">Kinderpatenschaften</a></div>
@@ -128,7 +128,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div id="slider-1" class="content-slider hidden-yes">
             <div class="box">
               <div class="close top slider-1">
-                <img class="close icon slider-1" src="front_new/images/close_w.svg" alt="Schließen">
+                <img class="close icon slider-1" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/close_w.svg" alt="Schließen">
               </div>
                 <h2>Mit Ihrer Kinderpatenschaft helfen Sie Ihrem Patenkind persönlich und nachhaltig.</strong></h2>  
                 <h3>Durch Ihre Patenschaft profitieren:</h3> 
@@ -177,7 +177,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <select id="edit-birth-month" name="birth_month" class="form-select"><option value="" selected="selected">Geburtsmonat</option><option value="01">Januar</option><option value="02">Februar</option><option value="03">März</option><option value="04">April</option><option value="05">Mai</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">August</option><option value="09">September</option><option value="10">Oktober</option><option value="11">November</option><option value="12">Dezember</option></select>
               </div>
               </div>
-                <label class="btn-primary open orange"><img class="icon" src="front_new/images/icon_transparent-smiley.svg" alt="">Ihr Patenkind finden</label><label class="btn-secondary">Wählen Sie für mich ein Kind</label>
+                <label class="btn-primary open orange"><img class="icon" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/icon_transparent-smiley.svg" alt="">Ihr Patenkind finden</label><label class="btn-secondary">Wählen Sie für mich ein Kind</label>
             
               
             </div>
@@ -202,7 +202,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div id="slider-6" class="content-slider hidden-yes">
             <div class="box">
               <div class="close slider-6">
-                <img class="close icon slider-6" src="front_new/images/close_w.svg" alt="Schließen">
+                <img class="close icon slider-6" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/close_w.svg" alt="Schließen">
               </div>
                 <h2>Die Kinderpatenschaft ist eine nachhaltige und persönliche Form der Unterstützung in den ärmsten Regionen der Welt.</h2>  
                 <h6>Durch Ihre Patenschaft profitieren:</h6> 
@@ -282,7 +282,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div id="slider-2" class="content-slider hidden-yes">
             <div class="box">
               <div class="close slider-2">
-                <img class="close icon slider-2" src="front_new/images/close_w.svg" alt="Schließen">
+                <img class="close icon slider-2" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/close_w.svg" alt="Schließen">
               </div>
               <h2>Beenden Sie die Gewalt gegen Kinder.</h2>
               <h3>Mit Ihrer monatlichen Spende schützen Sie Kinder vor Gewalt in Situationen wie diesen:</h3>  
@@ -312,13 +312,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </div>
                 </div>
               </div>
-             <a href="https://secure.worldvision.at/ihre-spende?donation_center_nid=127041&donation_amount=14&donation_cause=recurring" target="_self"><label class="btn-primary open orange"><img class="icon" src="front_new/images/icon_transparent-smiley.svg" alt="">Jetzt Kindheitsretter werden</label></a><a href="https://secure.worldvision.at/kindheitsretter" target="_self"><label class="btn-secondary">Mehr Informationen</label></a>
+             <a href="https://secure.worldvision.at/ihre-spende?donation_center_nid=127041&donation_amount=14&donation_cause=recurring" target="_self"><label class="btn-primary open orange"><img class="icon" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/icon_transparent-smiley.svg" alt="">Jetzt Kindheitsretter werden</label></a><a href="https://secure.worldvision.at/kindheitsretter" target="_self"><label class="btn-secondary">Mehr Informationen</label></a>
             </div>
           </div>
           <div id="slider-5" class="content-slider hidden-yes">  
             <div class="box">
               <div class="close slider-5">
-                <img class="close icon slider-5" src="front_new/images/close_w.svg" alt="Schließen">
+                <img class="close icon slider-5" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/close_w.svg" alt="Schließen">
               </div>
               <h2>Auf vielfältige Weise können Sie Menschen in Not helfen.</h2>
               <h3>Hier erfahren Sie, wie Sie unsere Arbeit mit kleinen und großen Spenden unterstützen können:</h3>  
@@ -396,7 +396,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div id="slider-3" class="content-slider hidden-yes">
             <div class="box">
               <div class="close slider-3">
-                <img class="close icon slider-3" src="front_new/images/close_w.svg" alt="Schließen">
+                <img class="close icon slider-3" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/close_w.svg" alt="Schließen">
               </div>
               <h2>Als christliche Kinderhilfsorganisation leisten wir langfristige Entwicklungs-Zusammenarbeit, Katastrophenhilfe und Anwaltschaftsarbeit.</h2>
               <h3>Erfahren Sie, wo und wie wir helfen:</h3>  
@@ -469,7 +469,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div id="slider-4" class="content-slider hidden-yes">
           <div class="box">
             <div class="close slider-4">
-              <img class="close icon slider-4" src="front_new/images/close_w.svg" alt="Schließen">
+              <img class="close icon slider-4" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/close_w.svg" alt="Schließen">
             </div>
             <h2>Engagieren Sie sich über Ihre Spende hinaus mit World Vision für Kinder in Not.</h2>
             <h3></h3>  
@@ -532,7 +532,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="content-panel">
               <div class="content-header">
                   <h1 id="title-2">Folgen Sie uns</h1>
-                  <a href="https://www.facebook.com/World.Vision.Oesterreich" target="_blank"><img src="front_new/images/facebook.jpg" alt="Facebook"></a>&nbsp;&nbsp;<a href="https://twitter.com/worldvisionat?lang=de" target="_blank"><img src="front_new/images/twitter.jpg" alt="Twitter"></a>&nbsp;&nbsp;<a href="https://www.youtube.com/user/Worldvisionperuable" target="_blank"><img src="front_new/images/youtube.jpg" alt="Youtube"></a>
+                  <a href="https://www.facebook.com/World.Vision.Oesterreich" target="_blank"><img src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/facebook.jpg" alt="Facebook"></a>&nbsp;&nbsp;<a href="https://twitter.com/worldvisionat?lang=de" target="_blank"><img src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/twitter.jpg" alt="Twitter"></a>&nbsp;&nbsp;<a href="https://www.youtube.com/user/Worldvisionperuable" target="_blank"><img src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/youtube.jpg" alt="Youtube"></a>
                 </div>
           </div>
       </div>

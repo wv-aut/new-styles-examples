@@ -1839,7 +1839,7 @@ p, h1, h2, h3, h4, h5, h6 {
         text-align: center;
       }
       .flexbox-arguments {
-        @include flexbox($gutter, 95%, 0, 10px, 3);
+        @include flexbox($gutter, 95%, 0, 10px, 4);
         padding-bottom: 1rem;
       }
       .flexbox-selector {

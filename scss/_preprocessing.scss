@@ -141,6 +141,71 @@ select {
 
 }
 
+@mixin call-to-action ($background-color: $white, $theme-color: $orange) {
+  .btn-primary {
+    display: inline-block;
+    border-radius: 10px;
+    color: set-text-color($background-color, $white);
+    font-size: 1.3rem;
+    font-family: 'Lato Light', sans-serif;
+    padding: 0.8rem 1rem;
+    margin: 3%;
+    text-decoration: none;
+    transition: box-shadow ease 0.5s;
+    background: $theme-color;
+    cursor: pointer;
+    width: 94%;
+    border: 1px solid lighten($theme-color, 5%);
+    @media screen and (min-width: $break-for-large-screens) {
+      width: auto;
+    }
+    img {
+      padding-right: 0.5rem;
+    }
+
+    &:hover {
+      text-decoration: none;
+      box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.34);
+    }
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    border-radius: 10px;
+    font-family: 'Lato Light', sans-serif;
+    color: $black;
+    font-size: 1.3rem;
+    margin: 3%;
+    width: 94%;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    background: white;
+    border: 1px solid lighten($black, 80%);
+    @media screen and (min-width: $break-for-large-screens) {
+      width: auto;
+    }
+    // width: 95%;
+    // @media screen and (min-width: $break-for-large-screens) {
+    //   width: auto;
+    // }
+    &.orange {
+      border: solid #f37021 0.2rem;
+    }
+    &.blue {
+      border: solid #00accb 0.2rem;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.content-slider {
+  .btn-primary, .btn-secondary {
+    font-size: 1.2rem !important;
+  }
+}
+
 @mixin container ($background-color: none) {
   position: relative;
   background-color: $background-color;
@@ -412,7 +477,7 @@ select {
             font-family: GillSansMTStd-ExtraBold;
             color: $font-color; 
             text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
-            font-size: rem-convert($global-h1-size);
+            font-size: 1.4rem;
             // @media screen and (max-width: $break-for-large-screens) {
             //     font-size: rem-convert($global-h1-size);
             // } 
@@ -426,10 +491,10 @@ select {
     }
     &.hidden-no {
       @if $direction == left {
-          // left: 3%;
+          left: 0;
           transform: translateX(0)
         } @else {
-          // right:3%;
+          right: 0;
           transform: translateX(0)
         }
       div.close {
@@ -553,64 +618,7 @@ select {
 
 }
 
-@mixin call-to-action ($background-color: $white, $theme-color: $orange) {
-    .btn-primary {
-      display: inline-block;
-      border-radius: 10px;
-      color: set-text-color($background-color, $white);
-      font-size: 1.4rem;
-      font-family: 'Lato Light', sans-serif;
-      padding: 0.8rem 1rem;
-      margin: 3%;
-      text-decoration: none;
-      transition: box-shadow ease 0.5s;
-      background: $theme-color;
-      cursor: pointer;
-      width: 94%;
-      border: 1px solid lighten($theme-color, 5%);
-      @media screen and (min-width: $break-for-large-screens) {
-        width: auto;
-      }
-      img {
-        padding-right: 0.5rem;
-      }
 
-      &:hover {
-        text-decoration: none;
-        box-shadow: 1px 1px 8px 2px rgba(0,0,0,0.34);
-      }
-    }
-
-    .btn-secondary {
-      display: inline-block;
-      border-radius: 10px;
-      font-family: 'Lato Light', sans-serif;
-      color: $black;
-      font-size: 1.4rem;
-      margin: 3%;
-      width: 94%;
-      padding: 0.8rem 1rem;
-      text-decoration: none;
-      background: white;
-      border: 1px solid lighten($black, 80%);
-      @media screen and (min-width: $break-for-large-screens) {
-        width: auto;
-      }
-      // width: 95%;
-      // @media screen and (min-width: $break-for-large-screens) {
-      //   width: auto;
-      // }
-      &.orange {
-        border: solid #f37021 0.2rem;
-      }
-      &.blue {
-        border: solid #00accb 0.2rem;
-      }
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
 
 #menu-container {
   position: relative;

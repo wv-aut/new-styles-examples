@@ -5514,6 +5514,9 @@ select {
   max-width: 1340px;
   margin: 0 auto; }
 
+.content-slider .btn-primary, .content-slider .btn-secondary {
+  font-size: 1.2rem !important; }
+
 #menu-container {
   position: relative;
   z-index: 600;
@@ -5617,7 +5620,7 @@ select {
         font-family: GillSansMTStd-ExtraBold;
         color: white;
         text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -5625,6 +5628,7 @@ select {
         z-index: 100;
         padding-bottom: 0; }
     #landingpage-header .content-slider.hidden-no {
+      right: 0;
       transform: translateX(0); }
       #landingpage-header .content-slider.hidden-no div.close {
         background-color: #f37021;
@@ -5993,7 +5997,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
     display: inline-block;
     border-radius: 10px;
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: 'Lato Light', sans-serif;
     padding: 0.8rem 1rem;
     margin: 3%;
@@ -6016,7 +6020,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
     border-radius: 10px;
     font-family: 'Lato Light', sans-serif;
     color: #000000;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 3%;
     width: 94%;
     padding: 0.8rem 1rem;
@@ -6120,7 +6124,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
         font-family: GillSansMTStd-ExtraBold;
         color: white;
         text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6128,6 +6132,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
         z-index: 100;
         padding-bottom: 0; }
     #landingpage-boxes-container #container-sponsorship .content-slider.hidden-no {
+      left: 0;
       transform: translateX(0); }
       #landingpage-boxes-container #container-sponsorship .content-slider.hidden-no div.close {
         background-color: #f37021;
@@ -6226,7 +6231,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
       display: inline-block;
       border-radius: 10px;
       color: #ffffff;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-family: 'Lato Light', sans-serif;
       padding: 0.8rem 1rem;
       margin: 3%;
@@ -6249,7 +6254,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
       border-radius: 10px;
       font-family: 'Lato Light', sans-serif;
       color: #000000;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin: 3%;
       width: 94%;
       padding: 0.8rem 1rem;
@@ -6340,15 +6345,15 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
       @media screen and (min-width: 768px) {
         #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments div[class*="column"] {
           margin-right: 10px; } }
-    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments .column-12-3 {
+    #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments .column-12-4 {
       position: relative;
       width: 99.99%;
       margin-bottom: 10px;
       padding-bottom: 0; }
       @media screen and (min-width: 768px) {
-        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments .column-12-3 {
-          width: calc( 99.99% * 3 / 12 - (10px - 10px * 3 / 12 )); } }
-      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments .column-12-3:nth-child(4n) {
+        #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments .column-12-4 {
+          width: calc( 99.99% * 4 / 12 - (10px - 10px * 4 / 12 )); } }
+      #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-arguments .column-12-4:nth-child(3n) {
         margin-right: 0; }
   #landingpage-boxes-container #container-sponsorship .content-slider .flexbox-selector {
     position: relative;
@@ -6505,7 +6510,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
     display: inline-block;
     border-radius: 10px;
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: 'Lato Light', sans-serif;
     padding: 0.8rem 1rem;
     margin: 3%;
@@ -6528,7 +6533,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
     border-radius: 10px;
     font-family: 'Lato Light', sans-serif;
     color: #000000;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 3%;
     width: 94%;
     padding: 0.8rem 1rem;
@@ -6632,7 +6637,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
         font-family: GillSansMTStd-ExtraBold;
         color: white;
         text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -6640,6 +6645,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
         z-index: 100;
         padding-bottom: 0; }
     #landingpage-boxes-container #container-2 .content-slider.hidden-no {
+      left: 0;
       transform: translateX(0); }
       #landingpage-boxes-container #container-2 .content-slider.hidden-no div.close {
         background-color: #f37021;
@@ -6882,7 +6888,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
     display: inline-block;
     border-radius: 10px;
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: 'Lato Light', sans-serif;
     padding: 0.8rem 1rem;
     margin: 3%;
@@ -6905,7 +6911,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
     border-radius: 10px;
     font-family: 'Lato Light', sans-serif;
     color: #000000;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 3%;
     width: 94%;
     padding: 0.8rem 1rem;
@@ -6979,7 +6985,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
     display: inline-block;
     border-radius: 10px;
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-family: 'Lato Light', sans-serif;
     padding: 0.8rem 1rem;
     margin: 3%;
@@ -7002,7 +7008,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
     border-radius: 10px;
     font-family: 'Lato Light', sans-serif;
     color: #000000;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 3%;
     width: 94%;
     padding: 0.8rem 1rem;
@@ -7106,7 +7112,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
         font-family: GillSansMTStd-ExtraBold;
         color: white;
         text-shadow: 0px 0px 80px rgba(0, 0, 0, 0.8);
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -7114,6 +7120,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
         z-index: 100;
         padding-bottom: 0; }
     #landingpage-boxes-container .tertiary-container .content-slider.hidden-no {
+      left: 0;
       transform: translateX(0); }
       #landingpage-boxes-container .tertiary-container .content-slider.hidden-no div.close {
         background-color: #f37021;
@@ -7355,7 +7362,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
       display: inline-block;
       border-radius: 10px;
       color: #ffffff;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-family: 'Lato Light', sans-serif;
       padding: 0.8rem 1rem;
       margin: 3%;
@@ -7378,7 +7385,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
       border-radius: 10px;
       font-family: 'Lato Light', sans-serif;
       color: #000000;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin: 3%;
       width: 94%;
       padding: 0.8rem 1rem;
@@ -7454,7 +7461,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
       display: inline-block;
       border-radius: 10px;
       color: #ffffff;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-family: 'Lato Light', sans-serif;
       padding: 0.8rem 1rem;
       margin: 3%;
@@ -7477,7 +7484,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
       border-radius: 10px;
       font-family: 'Lato Light', sans-serif;
       color: #000000;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin: 3%;
       width: 94%;
       padding: 0.8rem 1rem;
@@ -7553,7 +7560,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
       display: inline-block;
       border-radius: 10px;
       color: #ffffff;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       font-family: 'Lato Light', sans-serif;
       padding: 0.8rem 1rem;
       margin: 3%;
@@ -7576,7 +7583,7 @@ p.right, h1.right, h2.right, h3.right, h4.right, h5.right, h6.right {
       border-radius: 10px;
       font-family: 'Lato Light', sans-serif;
       color: #000000;
-      font-size: 1.4rem;
+      font-size: 1.3rem;
       margin: 3%;
       width: 94%;
       padding: 0.8rem 1rem;

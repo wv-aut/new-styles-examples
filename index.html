@@ -133,28 +133,30 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2>Mit Ihrer Kinderpatenschaft helfen Sie Ihrem Patenkind persönlich und nachhaltig.</strong></h2>  
                 <h3>Durch Ihre Patenschaft profitieren:</h3> 
             <div class="flexbox-arguments wrap">
-              <div class="column-12-3">
+              <div class="column-12-4">
                 <div class="header-image-text">
                   <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/Briefverkehr.jpg?itok=f-7snTXN" alt="">                    
                   <h3>Patenkind</h3>
                 </div>
                 <p>Ihr Patenkind erhält Zugang zu gesunder Ernährung, sauberem Trinkwasser, Bildung und Gesundheitsversorgung.</p>
                 </div>
-              <div class="column-12-3">
+              <div class="column-12-4">
                 <div class="header-image-text">
                   <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/Kinder_web.jpg?itok=ugd8PaKw" alt="">                    
                   <h3>Familie</h3>
                 </div> 
                 <p>Die Familie Ihres Patenkindes profitiert etwa durch landwirtschaftliche Schulungen oder Einkommensförderung.</p>
                 </div>
-              <div class="column-12-3">
+              <div class="column-12-4">
                 <div class="header-image-text">
                 <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/Sierra-Leone-World-Vision-OFID-Schulprojekt.jpg?itok=uJG5cXAT" alt="">                    
                 <h3>Umfeld</h3>
                 </div>
                 <p>Der Bau von Brunnen, Gesundheitsstationen und Schulen kommt allen Bewohnern der Region zugute.</p>
                 </div>
-              <div class="column-12-3">
+            </div>
+            <div class="flexbox-arguments wrap">
+              <div class="column-12-4">
                 <div class="header-image-text">
                 <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/liam-cunningham-mit-maedchen-in-jordanien-960x540.jpg?itok=dk-xhLPE" alt="">                    
                 <h3>Sie als Pate</h3>
@@ -177,9 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <select id="edit-birth-month" name="birth_month" class="form-select"><option value="" selected="selected">Geburtsmonat</option><option value="01">Januar</option><option value="02">Februar</option><option value="03">März</option><option value="04">April</option><option value="05">Mai</option><option value="06">Juni</option><option value="07">Juli</option><option value="08">August</option><option value="09">September</option><option value="10">Oktober</option><option value="11">November</option><option value="12">Dezember</option></select>
               </div>
               </div>
-                <label class="btn-primary open orange"><img class="icon" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/icon_transparent-smiley.svg" alt="">Ihr Patenkind finden</label><label class="btn-secondary">Wählen Sie für mich ein Kind</label>
-            
-              
+                <label class="btn-primary open orange"><img class="icon" src="/sites/worldvision.at/modules/wv_homepage_fy18/src/dist/images/icon_transparent-smiley.svg" alt="">Ihr Patenkind finden</label><label class="btn-secondary">Wählen Sie für mich ein Kind</label>  
             </div>
           </div>
         </div>
@@ -207,34 +207,74 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2>Die Kinderpatenschaft ist eine nachhaltige und persönliche Form der Unterstützung in den ärmsten Regionen der Welt.</h2>  
                 <h6>Durch Ihre Patenschaft profitieren:</h6> 
             <div class="flexbox-arguments wrap">
-              <div class="column-12-3">
+              <div class="column-12-4">
                 <div class="header-image-text">
                   <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/Briefverkehr.jpg?itok=f-7snTXN" alt="">                    
                   <h3>Immer bestens informiert</h3>
                 </div>
                 <p>Wir informieren Sie regelmäßig über Ihr Patenkind und die Fortschritte unserer Projektarbeit.</p>
+                <a href="http://www.worldvision.at/bestens-informiert" target="_self"><label class="btn-secondary">Informationen für Paten</label></a>
                 </div>
-              <div class="column-12-3">
+              <div class="column-12-4">
                 <div class="header-image-text">
                   <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/Kinder_web.jpg?itok=ugd8PaKw" alt="">                    
                   <h3>Post für Ihr Patenkind</h3>
                 </div> 
                 <p>Durch Briefe können Sie den Kontakt zu Ihrem Patenkind und seiner Familie aufbauen und pflegen.</p>
+                <a href="http://www.worldvision.at/post-fuers-patenkind" target="_self"><label class="btn-secondary">Dem Patenkind schreiben</label></a>                
                 </div>
-              <div class="column-12-3">
+              <div class="column-12-4">
                 <div class="header-image-text">
                 <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/Sierra-Leone-World-Vision-OFID-Schulprojekt.jpg?itok=uJG5cXAT" alt="">                    
                 <h3>Geschenke für Ihr Patenkind</h3>
                 </div>
                 <p>Ob Stifte, Hefte oder Luftballons: Sie können Ihrem Patenkind kleine Geschenke schicken und ihm so eine Freude bereiten.</p>
+                <a href="http://www.worldvision.at/geschenke-fuers-patenkind" target="_self"><label class="btn-secondary">Geschenke für das Patenkind</label></a>     
                 </div>
-              <div class="column-12-3">
+            </div>
+            <div class="flexbox-arguments wrap">
+              <div class="column-12-4">
                 <div class="header-image-text">
                 <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/liam-cunningham-mit-maedchen-in-jordanien-960x540.jpg?itok=dk-xhLPE" alt="">                    
                 <h3>Sonderspende für Ihr Patenkind</h3>
                 </div>
                 <p>Mit einer Sonderspende ermöglichen Sie eine wichtige Anschaffung für Ihr Patenkind und seine Familie.</p>
+                <a href="http://www.worldvision.at/sonderspende-fuers-patenkind" target="_self"><label class="btn-secondary">Über Sonderspenden</label></a>                     
                 </div>
+                <div class="column-12-4">
+                  <div class="header-image-text">
+                    <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/Kinder_web.jpg?itok=ugd8PaKw" alt="">                    
+                    <h3>E-Mail an Ihr Patenkind</h3>
+                  </div> 
+                  <p>Mit unserem Service "E-Mail an mein Patenkind" können Sie Ihrem Patenkind E-Mails schreiben und Fotos mitschicken.</p>
+                  <a href="https://secure.worldvision.at/abschluss/email-an-mein-patenkind" target="_self"><label class="btn-secondary">Jetzt E-Mail schreiben</label></a>    
+                  </div>
+                <div class="column-12-4">
+                  <div class="header-image-text">
+                  <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/Sierra-Leone-World-Vision-OFID-Schulprojekt.jpg?itok=uJG5cXAT" alt="">                    
+                  <h3>Geburtstagsgrüße für Ihr Patenkind</h3>
+                  </div>
+                  <p>Schicken Sie Ihrem Patenkind online Geburtstagsgrüße. Das ist schnell und einfach und erspart Ihnen den Weg zur Post.</p>
+                  <a href="https://secure.worldvision.at/spende/geburtstagsgruesse-fuer-ihr-patenkind" target="_self"><label class="btn-secondary">Geburtstagsgrüße schicken</label></a>                      
+                  </div>
+            </div>
+            <div class="flexbox-arguments wrap">
+              <div class="column-12-4">
+                <div class="header-image-text">
+                <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/liam-cunningham-mit-maedchen-in-jordanien-960x540.jpg?itok=dk-xhLPE" alt="">                    
+                <h3>Besuch bei Ihrem Patenkind</h3>
+                </div>
+                <p>Der Besuch bei Ihrem Patenkind und seiner Familie ist mit Sicherheit ein unvergessliches Erlebnis.</p>
+                <a href="http://www.worldvision.at/besuch-beim-patenkind" target="_self"><label class="btn-secondary">Ihr Patenkind besuchen</label></a>                                      
+                </div>
+                <div class="column-12-4">
+                  <div class="header-image-text">
+                    <img data-src="http://www.worldvision.at/sites/default/files/styles/480_16_9/public/Kinder_web.jpg?itok=ugd8PaKw" alt="">                    
+                    <h3>Kinderschutz bei World Vision</h3>
+                  </div> 
+                  <p>Die Sicherheit und das Wohlergehen der Kinder in unseren Patenschafts-Projekten haben für uns oberste Priorität.</p>
+                  <a href="http://www.worldvision.at/sites/default/files/KinderschutzinfoA5-Web.pdf" target="_self"><label class="btn-secondary">Kinderschutz-Infobroschüre</label></a>                                                        
+                  </div>
             </div>
 
               </div>
@@ -305,6 +345,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <h3>Kinderarbeit</h3>
                   </div>
                 </div>
+              </div>
+              <div class="flexbox-arguments wrap">
                 <div class="column-12-4">
                   <div class="header-image-text">
                   <img typeof="foaf:Image" data-src="http://www.worldvision.at/sites/default/files/styles/320/public/Kindheitsretter_Gewalt%20gegen%20Kinder%20beenden_Kindesmi%C3%9Fbrauch.jpg?itok=7Pm80ghk" alt="">
